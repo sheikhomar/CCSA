@@ -35,22 +35,32 @@ def Create_Pairs(domain_adaptation_task, repetition, sample_per_class):
 
     print('Creating pairs for repetition: ' + str(cc) + ' and sample_per_class: ' + str(sample_per_class))
 
+    print('\nLoading from ./row_data/')
     # shape(X_train_target) = [10 * samples_per_class, 16, 16]
     X_train_target = np.load(
         './row_data/' + UM + '_X_train_target_repetition_' + str(cc) + '_sample_per_class_' + str(SpC) + '.npy')
+
+    print('  X_train_target.shape {}'.format(X_train_target.shape))
 
     # shape(y_train_target) = [10 * samples_per_class]
     y_train_target = np.load(
         './row_data/' + UM + '_y_train_target_repetition_' + str(cc) + '_sample_per_class_' + str(SpC) + '.npy')
 
+    print('  y_train_target.shape {}'.format(y_train_target.shape))
+
     # shape(X_train_source) = [2000, 16, 16]
     X_train_source = np.load(
         './row_data/' + UM + '_X_train_source_repetition_' + str(cc) + '_sample_per_class_' + str(SpC) + '.npy')
+
+    print('  X_train_source.shape {}'.format(X_train_source.shape))
 
     # shape(y_train_source) = [2000]
     y_train_source = np.load(
         './row_data/' + UM + '_y_train_source_repetition_' + str(cc) + '_sample_per_class_' + str(SpC) + '.npy')
 
+    print('  y_train_source.shape {}'.format(y_train_source.shape))
+
+    print('\nCreating positive and negative pairs')
     Training_P = []
     Training_N = []
 
@@ -60,14 +70,21 @@ def Create_Pairs(domain_adaptation_task, repetition, sample_per_class):
                 Training_P.append([trs, trt])
             else:
                 Training_N.append([trs, trt])
+    print('  Number of positive pairs: {}'.format(len(Training_P)))
+    print('  Number of negative pairs: {}'.format(len(Training_N)))
 
     random.shuffle(Training_N)
 
+    print('\nConstructing training pairs')
     # NOTE: In the training examples, there are 3 times more negative pairs than positive pairs
     Training = Training_P + Training_N[:3 * len(Training_P)]
+    print('  Using {} positive pairs'.format(len(Training_P)))
+    print('  Using {} negative pairs'.format(len(Training_N[:3 * len(Training_P)])))
+    print('  Total number of training pairs: {}'.format(len(Training)))
 
     random.shuffle(Training)
 
+    print('\nCreating and storing training examples on disk')
     X1 = np.zeros([len(Training), 16, 16], dtype='float32')
     X2 = np.zeros([len(Training), 16, 16], dtype='float32')
 
