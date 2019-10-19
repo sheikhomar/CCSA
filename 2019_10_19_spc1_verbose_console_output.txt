@@ -1,0 +1,1148 @@
+Start time: 2019-10-19 14:48
+Domain Adaptation Task: MNIST_to_USPS
+Creating pairs for repetition: 0 and sample_per_class: 1
+
+Loading training data from ./row_data/MNIST_to_USPS_XY_repetition_0_sample_per_class_1.npy
+  Target Features, shape (10, 16, 16)
+  Target Labels, shape (10,)
+  Source Features, shape (2000, 16, 16)
+  Source Labels, shape (2000,)
+
+Creating positive and negative pairs
+  Number of positive pairs: 2000
+  Number of negative pairs: 18000
+
+Constructing training pairs
+  Using 2000 positive pairs
+  Using 6000 negative pairs
+  Total number of training pairs: 8000
+
+Creating and storing training examples on disk
+
+
+Training the model - epochs=80  batch_size=256  n_steps=32  n_train_samples=8000
+Test data loaded: target feature shape=(1800, 16, 16, 1)  label shape=(1800, 10)
+ Step 0
+  Source Pass:  loss 1.8124  classification_loss 2.3082  CSA_loss 0.3249
+  Target Pass:  loss 1.7956  classification_loss 2.3113  CSA_loss 0.2485
+ Step 10
+  Source Pass:  loss 1.4637  classification_loss 1.7074  CSA_loss 0.7326
+  Target Pass:  loss 1.1361  classification_loss 1.3856  CSA_loss 0.3874
+ Step 20
+  Source Pass:  loss 0.9985  classification_loss 0.9183  CSA_loss 1.2392
+  Target Pass:  loss 0.6323  classification_loss 0.6481  CSA_loss 0.5848
+ Step 30
+  Source Pass:  loss 0.6962  classification_loss 0.6271  CSA_loss 0.9036
+  Target Pass:  loss 0.4469  classification_loss 0.3741  CSA_loss 0.6653
+Epoch  0 done. Test accuracy: 0.7350  Best: 0.0000  Save: True
+Begining epoch 1.
+ Step 0
+  Source Pass:  loss 0.8575  classification_loss 0.8362  CSA_loss 0.9213
+  Target Pass:  loss 0.4380  classification_loss 0.3861  CSA_loss 0.5937
+ Step 10
+  Source Pass:  loss 0.5296  classification_loss 0.4888  CSA_loss 0.6518
+  Target Pass:  loss 0.3006  classification_loss 0.2176  CSA_loss 0.5498
+ Step 20
+  Source Pass:  loss 0.4495  classification_loss 0.3633  CSA_loss 0.7082
+  Target Pass:  loss 0.2349  classification_loss 0.1530  CSA_loss 0.4803
+ Step 30
+  Source Pass:  loss 0.3880  classification_loss 0.3448  CSA_loss 0.5179
+  Target Pass:  loss 0.2240  classification_loss 0.1525  CSA_loss 0.4385
+Epoch  1 done. Test accuracy: 0.8128  Best: 0.7350  Save: True
+Begining epoch 2.
+ Step 0
+  Source Pass:  loss 0.4425  classification_loss 0.3857  CSA_loss 0.6129
+  Target Pass:  loss 0.2241  classification_loss 0.1402  CSA_loss 0.4755
+ Step 10
+  Source Pass:  loss 0.3418  classification_loss 0.3033  CSA_loss 0.4571
+  Target Pass:  loss 0.1784  classification_loss 0.0991  CSA_loss 0.4162
+ Step 20
+  Source Pass:  loss 0.2861  classification_loss 0.2058  CSA_loss 0.5270
+  Target Pass:  loss 0.1699  classification_loss 0.1037  CSA_loss 0.3687
+ Step 30
+  Source Pass:  loss 0.2736  classification_loss 0.2340  CSA_loss 0.3922
+  Target Pass:  loss 0.1505  classification_loss 0.0857  CSA_loss 0.3448
+Epoch  2 done. Test accuracy: 0.8250  Best: 0.8128  Save: True
+Begining epoch 3.
+ Step 0
+  Source Pass:  loss 0.2777  classification_loss 0.2385  CSA_loss 0.3955
+  Target Pass:  loss 0.1515  classification_loss 0.0788  CSA_loss 0.3696
+ Step 10
+  Source Pass:  loss 0.2185  classification_loss 0.1738  CSA_loss 0.3525
+  Target Pass:  loss 0.1399  classification_loss 0.0733  CSA_loss 0.3395
+ Step 20
+  Source Pass:  loss 0.2002  classification_loss 0.1305  CSA_loss 0.4095
+  Target Pass:  loss 0.1343  classification_loss 0.0680  CSA_loss 0.3330
+ Step 30
+  Source Pass:  loss 0.2120  classification_loss 0.1745  CSA_loss 0.3246
+  Target Pass:  loss 0.1245  classification_loss 0.0687  CSA_loss 0.2919
+Epoch  3 done. Test accuracy: 0.8444  Best: 0.8250  Save: True
+Begining epoch 4.
+ Step 0
+  Source Pass:  loss 0.2394  classification_loss 0.1987  CSA_loss 0.3617
+  Target Pass:  loss 0.1263  classification_loss 0.0704  CSA_loss 0.2940
+ Step 10
+  Source Pass:  loss 0.1506  classification_loss 0.0999  CSA_loss 0.3029
+  Target Pass:  loss 0.1102  classification_loss 0.0603  CSA_loss 0.2601
+ Step 20
+  Source Pass:  loss 0.1612  classification_loss 0.1034  CSA_loss 0.3345
+  Target Pass:  loss 0.1168  classification_loss 0.0441  CSA_loss 0.3349
+ Step 30
+  Source Pass:  loss 0.1647  classification_loss 0.1377  CSA_loss 0.2455
+  Target Pass:  loss 0.0966  classification_loss 0.0502  CSA_loss 0.2358
+Epoch  4 done. Test accuracy: 0.8467  Best: 0.8444  Save: True
+Begining epoch 5.
+ Step 0
+  Source Pass:  loss 0.1598  classification_loss 0.1144  CSA_loss 0.2963
+  Target Pass:  loss 0.1056  classification_loss 0.0611  CSA_loss 0.2389
+ Step 10
+  Source Pass:  loss 0.1548  classification_loss 0.1134  CSA_loss 0.2789
+  Target Pass:  loss 0.0983  classification_loss 0.0492  CSA_loss 0.2458
+ Step 20
+  Source Pass:  loss 0.1352  classification_loss 0.0907  CSA_loss 0.2687
+  Target Pass:  loss 0.0854  classification_loss 0.0381  CSA_loss 0.2274
+ Step 30
+  Source Pass:  loss 0.1417  classification_loss 0.1139  CSA_loss 0.2250
+  Target Pass:  loss 0.0725  classification_loss 0.0317  CSA_loss 0.1949
+Epoch  5 done. Test accuracy: 0.8478  Best: 0.8467  Save: True
+Begining epoch 6.
+ Step 0
+  Source Pass:  loss 0.1316  classification_loss 0.0954  CSA_loss 0.2403
+  Target Pass:  loss 0.0996  classification_loss 0.0573  CSA_loss 0.2266
+ Step 10
+  Source Pass:  loss 0.1484  classification_loss 0.1074  CSA_loss 0.2714
+  Target Pass:  loss 0.0797  classification_loss 0.0341  CSA_loss 0.2163
+ Step 20
+  Source Pass:  loss 0.1302  classification_loss 0.0870  CSA_loss 0.2597
+  Target Pass:  loss 0.0762  classification_loss 0.0374  CSA_loss 0.1924
+ Step 30
+  Source Pass:  loss 0.0967  classification_loss 0.0693  CSA_loss 0.1792
+  Target Pass:  loss 0.0662  classification_loss 0.0360  CSA_loss 0.1568
+Epoch  6 done. Test accuracy: 0.8456  Best: 0.8478  Save: False
+Begining epoch 7.
+ Step 0
+  Source Pass:  loss 0.1118  classification_loss 0.0831  CSA_loss 0.1979
+  Target Pass:  loss 0.0662  classification_loss 0.0331  CSA_loss 0.1655
+ Step 10
+  Source Pass:  loss 0.0951  classification_loss 0.0672  CSA_loss 0.1789
+  Target Pass:  loss 0.0677  classification_loss 0.0289  CSA_loss 0.1841
+ Step 20
+  Source Pass:  loss 0.0991  classification_loss 0.0674  CSA_loss 0.1943
+  Target Pass:  loss 0.0563  classification_loss 0.0230  CSA_loss 0.1562
+ Step 30
+  Source Pass:  loss 0.0967  classification_loss 0.0740  CSA_loss 0.1648
+  Target Pass:  loss 0.0595  classification_loss 0.0289  CSA_loss 0.1516
+Epoch  7 done. Test accuracy: 0.8483  Best: 0.8478  Save: True
+Begining epoch 8.
+ Step 0
+  Source Pass:  loss 0.1194  classification_loss 0.0970  CSA_loss 0.1865
+  Target Pass:  loss 0.0623  classification_loss 0.0378  CSA_loss 0.1360
+ Step 10
+  Source Pass:  loss 0.0810  classification_loss 0.0557  CSA_loss 0.1570
+  Target Pass:  loss 0.0585  classification_loss 0.0296  CSA_loss 0.1451
+ Step 20
+  Source Pass:  loss 0.0816  classification_loss 0.0487  CSA_loss 0.1801
+  Target Pass:  loss 0.0611  classification_loss 0.0249  CSA_loss 0.1695
+ Step 30
+  Source Pass:  loss 0.0779  classification_loss 0.0577  CSA_loss 0.1384
+  Target Pass:  loss 0.0500  classification_loss 0.0214  CSA_loss 0.1355
+Epoch  8 done. Test accuracy: 0.8567  Best: 0.8483  Save: True
+Begining epoch 9.
+ Step 0
+  Source Pass:  loss 0.0839  classification_loss 0.0568  CSA_loss 0.1651
+  Target Pass:  loss 0.0462  classification_loss 0.0236  CSA_loss 0.1139
+ Step 10
+  Source Pass:  loss 0.0729  classification_loss 0.0433  CSA_loss 0.1619
+  Target Pass:  loss 0.0479  classification_loss 0.0176  CSA_loss 0.1386
+ Step 20
+  Source Pass:  loss 0.0688  classification_loss 0.0417  CSA_loss 0.1503
+  Target Pass:  loss 0.0465  classification_loss 0.0197  CSA_loss 0.1268
+ Step 30
+  Source Pass:  loss 0.0591  classification_loss 0.0364  CSA_loss 0.1274
+  Target Pass:  loss 0.0481  classification_loss 0.0180  CSA_loss 0.1383
+Epoch  9 done. Test accuracy: 0.8500  Best: 0.8567  Save: False
+Begining epoch 10.
+ Step 0
+  Source Pass:  loss 0.0794  classification_loss 0.0517  CSA_loss 0.1624
+  Target Pass:  loss 0.0485  classification_loss 0.0234  CSA_loss 0.1238
+ Step 10
+  Source Pass:  loss 0.0644  classification_loss 0.0367  CSA_loss 0.1475
+  Target Pass:  loss 0.0423  classification_loss 0.0185  CSA_loss 0.1138
+ Step 20
+  Source Pass:  loss 0.0708  classification_loss 0.0415  CSA_loss 0.1586
+  Target Pass:  loss 0.0459  classification_loss 0.0164  CSA_loss 0.1345
+ Step 30
+  Source Pass:  loss 0.0591  classification_loss 0.0374  CSA_loss 0.1242
+  Target Pass:  loss 0.0401  classification_loss 0.0181  CSA_loss 0.1061
+Epoch 10 done. Test accuracy: 0.8494  Best: 0.8567  Save: False
+Begining epoch 11.
+ Step 0
+  Source Pass:  loss 0.0681  classification_loss 0.0401  CSA_loss 0.1521
+  Target Pass:  loss 0.0460  classification_loss 0.0275  CSA_loss 0.1014
+ Step 10
+  Source Pass:  loss 0.0633  classification_loss 0.0374  CSA_loss 0.1410
+  Target Pass:  loss 0.0417  classification_loss 0.0168  CSA_loss 0.1164
+ Step 20
+  Source Pass:  loss 0.0648  classification_loss 0.0336  CSA_loss 0.1584
+  Target Pass:  loss 0.0405  classification_loss 0.0159  CSA_loss 0.1141
+ Step 30
+  Source Pass:  loss 0.0618  classification_loss 0.0392  CSA_loss 0.1296
+  Target Pass:  loss 0.0354  classification_loss 0.0145  CSA_loss 0.0980
+Epoch 11 done. Test accuracy: 0.8550  Best: 0.8567  Save: False
+Begining epoch 12.
+ Step 0
+  Source Pass:  loss 0.0629  classification_loss 0.0343  CSA_loss 0.1485
+  Target Pass:  loss 0.0431  classification_loss 0.0189  CSA_loss 0.1155
+ Step 10
+  Source Pass:  loss 0.0481  classification_loss 0.0261  CSA_loss 0.1140
+  Target Pass:  loss 0.0372  classification_loss 0.0160  CSA_loss 0.1008
+ Step 20
+  Source Pass:  loss 0.0562  classification_loss 0.0287  CSA_loss 0.1387
+  Target Pass:  loss 0.0411  classification_loss 0.0228  CSA_loss 0.0960
+ Step 30
+  Source Pass:  loss 0.0500  classification_loss 0.0329  CSA_loss 0.1011
+  Target Pass:  loss 0.0353  classification_loss 0.0147  CSA_loss 0.0971
+Epoch 12 done. Test accuracy: 0.8606  Best: 0.8567  Save: True
+Begining epoch 13.
+ Step 0
+  Source Pass:  loss 0.0608  classification_loss 0.0378  CSA_loss 0.1297
+  Target Pass:  loss 0.0350  classification_loss 0.0135  CSA_loss 0.0996
+ Step 10
+  Source Pass:  loss 0.0453  classification_loss 0.0261  CSA_loss 0.1027
+  Target Pass:  loss 0.0358  classification_loss 0.0171  CSA_loss 0.0918
+ Step 20
+  Source Pass:  loss 0.0518  classification_loss 0.0263  CSA_loss 0.1286
+  Target Pass:  loss 0.0361  classification_loss 0.0163  CSA_loss 0.0956
+ Step 30
+  Source Pass:  loss 0.0455  classification_loss 0.0301  CSA_loss 0.0918
+  Target Pass:  loss 0.0289  classification_loss 0.0095  CSA_loss 0.0870
+Epoch 13 done. Test accuracy: 0.8611  Best: 0.8606  Save: True
+Begining epoch 14.
+ Step 0
+  Source Pass:  loss 0.0545  classification_loss 0.0311  CSA_loss 0.1247
+  Target Pass:  loss 0.0326  classification_loss 0.0122  CSA_loss 0.0940
+ Step 10
+  Source Pass:  loss 0.0471  classification_loss 0.0321  CSA_loss 0.0920
+  Target Pass:  loss 0.0289  classification_loss 0.0084  CSA_loss 0.0904
+ Step 20
+  Source Pass:  loss 0.0366  classification_loss 0.0113  CSA_loss 0.1125
+  Target Pass:  loss 0.0311  classification_loss 0.0140  CSA_loss 0.0822
+ Step 30
+  Source Pass:  loss 0.0418  classification_loss 0.0260  CSA_loss 0.0891
+  Target Pass:  loss 0.0330  classification_loss 0.0160  CSA_loss 0.0839
+Epoch 14 done. Test accuracy: 0.8483  Best: 0.8611  Save: False
+Begining epoch 15.
+ Step 0
+  Source Pass:  loss 0.0475  classification_loss 0.0263  CSA_loss 0.1111
+  Target Pass:  loss 0.0332  classification_loss 0.0156  CSA_loss 0.0857
+ Step 10
+  Source Pass:  loss 0.0394  classification_loss 0.0239  CSA_loss 0.0858
+  Target Pass:  loss 0.0268  classification_loss 0.0107  CSA_loss 0.0748
+ Step 20
+  Source Pass:  loss 0.0308  classification_loss 0.0127  CSA_loss 0.0850
+  Target Pass:  loss 0.0339  classification_loss 0.0108  CSA_loss 0.1033
+ Step 30
+  Source Pass:  loss 0.0347  classification_loss 0.0207  CSA_loss 0.0767
+  Target Pass:  loss 0.0259  classification_loss 0.0103  CSA_loss 0.0725
+Epoch 15 done. Test accuracy: 0.8572  Best: 0.8611  Save: False
+Begining epoch 16.
+ Step 0
+  Source Pass:  loss 0.0363  classification_loss 0.0184  CSA_loss 0.0903
+  Target Pass:  loss 0.0301  classification_loss 0.0154  CSA_loss 0.0744
+ Step 10
+  Source Pass:  loss 0.0395  classification_loss 0.0261  CSA_loss 0.0798
+  Target Pass:  loss 0.0278  classification_loss 0.0103  CSA_loss 0.0800
+ Step 20
+  Source Pass:  loss 0.0328  classification_loss 0.0141  CSA_loss 0.0892
+  Target Pass:  loss 0.0308  classification_loss 0.0117  CSA_loss 0.0883
+ Step 30
+  Source Pass:  loss 0.0379  classification_loss 0.0240  CSA_loss 0.0794
+  Target Pass:  loss 0.0286  classification_loss 0.0139  CSA_loss 0.0725
+Epoch 16 done. Test accuracy: 0.8550  Best: 0.8611  Save: False
+Begining epoch 17.
+ Step 0
+  Source Pass:  loss 0.0420  classification_loss 0.0272  CSA_loss 0.0863
+  Target Pass:  loss 0.0222  classification_loss 0.0103  CSA_loss 0.0579
+ Step 10
+  Source Pass:  loss 0.0303  classification_loss 0.0162  CSA_loss 0.0726
+  Target Pass:  loss 0.0274  classification_loss 0.0086  CSA_loss 0.0838
+ Step 20
+  Source Pass:  loss 0.0368  classification_loss 0.0173  CSA_loss 0.0952
+  Target Pass:  loss 0.0258  classification_loss 0.0108  CSA_loss 0.0707
+ Step 30
+  Source Pass:  loss 0.0303  classification_loss 0.0177  CSA_loss 0.0684
+  Target Pass:  loss 0.0240  classification_loss 0.0070  CSA_loss 0.0749
+Epoch 17 done. Test accuracy: 0.8561  Best: 0.8611  Save: False
+Begining epoch 18.
+ Step 0
+  Source Pass:  loss 0.0346  classification_loss 0.0184  CSA_loss 0.0833
+  Target Pass:  loss 0.0284  classification_loss 0.0146  CSA_loss 0.0698
+ Step 10
+  Source Pass:  loss 0.0320  classification_loss 0.0164  CSA_loss 0.0788
+  Target Pass:  loss 0.0227  classification_loss 0.0069  CSA_loss 0.0702
+ Step 20
+  Source Pass:  loss 0.0277  classification_loss 0.0136  CSA_loss 0.0698
+  Target Pass:  loss 0.0231  classification_loss 0.0113  CSA_loss 0.0584
+ Step 30
+  Source Pass:  loss 0.0275  classification_loss 0.0132  CSA_loss 0.0704
+  Target Pass:  loss 0.0218  classification_loss 0.0101  CSA_loss 0.0570
+Epoch 18 done. Test accuracy: 0.8533  Best: 0.8611  Save: False
+Begining epoch 19.
+ Step 0
+  Source Pass:  loss 0.0474  classification_loss 0.0331  CSA_loss 0.0904
+  Target Pass:  loss 0.0237  classification_loss 0.0086  CSA_loss 0.0693
+ Step 10
+  Source Pass:  loss 0.0267  classification_loss 0.0102  CSA_loss 0.0761
+  Target Pass:  loss 0.0254  classification_loss 0.0124  CSA_loss 0.0642
+ Step 20
+  Source Pass:  loss 0.0249  classification_loss 0.0107  CSA_loss 0.0676
+  Target Pass:  loss 0.0254  classification_loss 0.0108  CSA_loss 0.0690
+ Step 30
+  Source Pass:  loss 0.0281  classification_loss 0.0135  CSA_loss 0.0719
+  Target Pass:  loss 0.0201  classification_loss 0.0074  CSA_loss 0.0583
+Epoch 19 done. Test accuracy: 0.8606  Best: 0.8611  Save: False
+Begining epoch 20.
+ Step 0
+  Source Pass:  loss 0.0333  classification_loss 0.0246  CSA_loss 0.0594
+  Target Pass:  loss 0.0214  classification_loss 0.0074  CSA_loss 0.0635
+ Step 10
+  Source Pass:  loss 0.0270  classification_loss 0.0117  CSA_loss 0.0728
+  Target Pass:  loss 0.0198  classification_loss 0.0103  CSA_loss 0.0482
+ Step 20
+  Source Pass:  loss 0.0304  classification_loss 0.0183  CSA_loss 0.0665
+  Target Pass:  loss 0.0223  classification_loss 0.0080  CSA_loss 0.0652
+ Step 30
+  Source Pass:  loss 0.0235  classification_loss 0.0123  CSA_loss 0.0568
+  Target Pass:  loss 0.0223  classification_loss 0.0078  CSA_loss 0.0661
+Epoch 20 done. Test accuracy: 0.8606  Best: 0.8611  Save: False
+Begining epoch 21.
+ Step 0
+  Source Pass:  loss 0.0332  classification_loss 0.0241  CSA_loss 0.0604
+  Target Pass:  loss 0.0229  classification_loss 0.0094  CSA_loss 0.0635
+ Step 10
+  Source Pass:  loss 0.0197  classification_loss 0.0104  CSA_loss 0.0477
+  Target Pass:  loss 0.0230  classification_loss 0.0096  CSA_loss 0.0634
+ Step 20
+  Source Pass:  loss 0.0239  classification_loss 0.0110  CSA_loss 0.0629
+  Target Pass:  loss 0.0193  classification_loss 0.0074  CSA_loss 0.0549
+ Step 30
+  Source Pass:  loss 0.0297  classification_loss 0.0192  CSA_loss 0.0614
+  Target Pass:  loss 0.0161  classification_loss 0.0074  CSA_loss 0.0421
+Epoch 21 done. Test accuracy: 0.8622  Best: 0.8611  Save: True
+Begining epoch 22.
+ Step 0
+  Source Pass:  loss 0.0311  classification_loss 0.0201  CSA_loss 0.0642
+  Target Pass:  loss 0.0222  classification_loss 0.0098  CSA_loss 0.0596
+ Step 10
+  Source Pass:  loss 0.0215  classification_loss 0.0082  CSA_loss 0.0612
+  Target Pass:  loss 0.0171  classification_loss 0.0075  CSA_loss 0.0458
+ Step 20
+  Source Pass:  loss 0.0195  classification_loss 0.0085  CSA_loss 0.0523
+  Target Pass:  loss 0.0193  classification_loss 0.0066  CSA_loss 0.0571
+ Step 30
+  Source Pass:  loss 0.0211  classification_loss 0.0101  CSA_loss 0.0541
+  Target Pass:  loss 0.0184  classification_loss 0.0093  CSA_loss 0.0455
+Epoch 22 done. Test accuracy: 0.8589  Best: 0.8622  Save: False
+Begining epoch 23.
+ Step 0
+  Source Pass:  loss 0.0252  classification_loss 0.0148  CSA_loss 0.0561
+  Target Pass:  loss 0.0161  classification_loss 0.0069  CSA_loss 0.0439
+ Step 10
+  Source Pass:  loss 0.0222  classification_loss 0.0092  CSA_loss 0.0613
+  Target Pass:  loss 0.0191  classification_loss 0.0103  CSA_loss 0.0456
+ Step 20
+  Source Pass:  loss 0.0245  classification_loss 0.0156  CSA_loss 0.0513
+  Target Pass:  loss 0.0150  classification_loss 0.0053  CSA_loss 0.0443
+ Step 30
+  Source Pass:  loss 0.0218  classification_loss 0.0109  CSA_loss 0.0546
+  Target Pass:  loss 0.0166  classification_loss 0.0072  CSA_loss 0.0448
+Epoch 23 done. Test accuracy: 0.8600  Best: 0.8622  Save: False
+Begining epoch 24.
+ Step 0
+  Source Pass:  loss 0.0205  classification_loss 0.0079  CSA_loss 0.0582
+  Target Pass:  loss 0.0187  classification_loss 0.0060  CSA_loss 0.0568
+ Step 10
+  Source Pass:  loss 0.0172  classification_loss 0.0070  CSA_loss 0.0479
+  Target Pass:  loss 0.0191  classification_loss 0.0112  CSA_loss 0.0428
+ Step 20
+  Source Pass:  loss 0.0213  classification_loss 0.0095  CSA_loss 0.0567
+  Target Pass:  loss 0.0199  classification_loss 0.0107  CSA_loss 0.0473
+ Step 30
+  Source Pass:  loss 0.0208  classification_loss 0.0120  CSA_loss 0.0469
+  Target Pass:  loss 0.0212  classification_loss 0.0126  CSA_loss 0.0472
+Epoch 24 done. Test accuracy: 0.8539  Best: 0.8622  Save: False
+Begining epoch 25.
+ Step 0
+  Source Pass:  loss 0.0300  classification_loss 0.0162  CSA_loss 0.0717
+  Target Pass:  loss 0.0175  classification_loss 0.0064  CSA_loss 0.0507
+ Step 10
+  Source Pass:  loss 0.0201  classification_loss 0.0107  CSA_loss 0.0483
+  Target Pass:  loss 0.0152  classification_loss 0.0051  CSA_loss 0.0454
+ Step 20
+  Source Pass:  loss 0.0190  classification_loss 0.0086  CSA_loss 0.0501
+  Target Pass:  loss 0.0174  classification_loss 0.0059  CSA_loss 0.0519
+ Step 30
+  Source Pass:  loss 0.0210  classification_loss 0.0117  CSA_loss 0.0490
+  Target Pass:  loss 0.0163  classification_loss 0.0076  CSA_loss 0.0425
+Epoch 25 done. Test accuracy: 0.8650  Best: 0.8622  Save: True
+Begining epoch 26.
+ Step 0
+  Source Pass:  loss 0.0180  classification_loss 0.0100  CSA_loss 0.0421
+  Target Pass:  loss 0.0156  classification_loss 0.0078  CSA_loss 0.0387
+ Step 10
+  Source Pass:  loss 0.0183  classification_loss 0.0066  CSA_loss 0.0536
+  Target Pass:  loss 0.0150  classification_loss 0.0055  CSA_loss 0.0433
+ Step 20
+  Source Pass:  loss 0.0208  classification_loss 0.0122  CSA_loss 0.0466
+  Target Pass:  loss 0.0238  classification_loss 0.0131  CSA_loss 0.0561
+ Step 30
+  Source Pass:  loss 0.0192  classification_loss 0.0099  CSA_loss 0.0472
+  Target Pass:  loss 0.0192  classification_loss 0.0131  CSA_loss 0.0377
+Epoch 26 done. Test accuracy: 0.8639  Best: 0.8650  Save: False
+Begining epoch 27.
+ Step 0
+  Source Pass:  loss 0.0222  classification_loss 0.0109  CSA_loss 0.0559
+  Target Pass:  loss 0.0164  classification_loss 0.0068  CSA_loss 0.0452
+ Step 10
+  Source Pass:  loss 0.0214  classification_loss 0.0135  CSA_loss 0.0451
+  Target Pass:  loss 0.0151  classification_loss 0.0058  CSA_loss 0.0431
+ Step 20
+  Source Pass:  loss 0.0158  classification_loss 0.0061  CSA_loss 0.0450
+  Target Pass:  loss 0.0152  classification_loss 0.0064  CSA_loss 0.0417
+ Step 30
+  Source Pass:  loss 0.0226  classification_loss 0.0156  CSA_loss 0.0435
+  Target Pass:  loss 0.0150  classification_loss 0.0079  CSA_loss 0.0362
+Epoch 27 done. Test accuracy: 0.8633  Best: 0.8650  Save: False
+Begining epoch 28.
+ Step 0
+  Source Pass:  loss 0.0182  classification_loss 0.0092  CSA_loss 0.0453
+  Target Pass:  loss 0.0132  classification_loss 0.0054  CSA_loss 0.0364
+ Step 10
+  Source Pass:  loss 0.0159  classification_loss 0.0068  CSA_loss 0.0431
+  Target Pass:  loss 0.0153  classification_loss 0.0069  CSA_loss 0.0406
+ Step 20
+  Source Pass:  loss 0.0165  classification_loss 0.0088  CSA_loss 0.0394
+  Target Pass:  loss 0.0182  classification_loss 0.0084  CSA_loss 0.0478
+ Step 30
+  Source Pass:  loss 0.0148  classification_loss 0.0075  CSA_loss 0.0366
+  Target Pass:  loss 0.0151  classification_loss 0.0082  CSA_loss 0.0358
+Epoch 28 done. Test accuracy: 0.8611  Best: 0.8650  Save: False
+Begining epoch 29.
+ Step 0
+  Source Pass:  loss 0.0224  classification_loss 0.0146  CSA_loss 0.0460
+  Target Pass:  loss 0.0125  classification_loss 0.0040  CSA_loss 0.0380
+ Step 10
+  Source Pass:  loss 0.0165  classification_loss 0.0075  CSA_loss 0.0436
+  Target Pass:  loss 0.0135  classification_loss 0.0051  CSA_loss 0.0386
+ Step 20
+  Source Pass:  loss 0.0150  classification_loss 0.0070  CSA_loss 0.0387
+  Target Pass:  loss 0.0138  classification_loss 0.0052  CSA_loss 0.0395
+ Step 30
+  Source Pass:  loss 0.0160  classification_loss 0.0095  CSA_loss 0.0356
+  Target Pass:  loss 0.0147  classification_loss 0.0054  CSA_loss 0.0428
+Epoch 29 done. Test accuracy: 0.8661  Best: 0.8650  Save: True
+Begining epoch 30.
+ Step 0
+  Source Pass:  loss 0.0158  classification_loss 0.0057  CSA_loss 0.0460
+  Target Pass:  loss 0.0134  classification_loss 0.0049  CSA_loss 0.0388
+ Step 10
+  Source Pass:  loss 0.0194  classification_loss 0.0102  CSA_loss 0.0469
+  Target Pass:  loss 0.0128  classification_loss 0.0047  CSA_loss 0.0373
+ Step 20
+  Source Pass:  loss 0.0149  classification_loss 0.0063  CSA_loss 0.0405
+  Target Pass:  loss 0.0136  classification_loss 0.0055  CSA_loss 0.0380
+ Step 30
+  Source Pass:  loss 0.0150  classification_loss 0.0070  CSA_loss 0.0389
+  Target Pass:  loss 0.0148  classification_loss 0.0072  CSA_loss 0.0377
+Epoch 30 done. Test accuracy: 0.8628  Best: 0.8661  Save: False
+Begining epoch 31.
+ Step 0
+  Source Pass:  loss 0.0159  classification_loss 0.0072  CSA_loss 0.0419
+  Target Pass:  loss 0.0161  classification_loss 0.0088  CSA_loss 0.0380
+ Step 10
+  Source Pass:  loss 0.0191  classification_loss 0.0134  CSA_loss 0.0364
+  Target Pass:  loss 0.0123  classification_loss 0.0041  CSA_loss 0.0369
+ Step 20
+  Source Pass:  loss 0.0150  classification_loss 0.0055  CSA_loss 0.0435
+  Target Pass:  loss 0.0136  classification_loss 0.0065  CSA_loss 0.0349
+ Step 30
+  Source Pass:  loss 0.0172  classification_loss 0.0092  CSA_loss 0.0413
+  Target Pass:  loss 0.0109  classification_loss 0.0052  CSA_loss 0.0279
+Epoch 31 done. Test accuracy: 0.8683  Best: 0.8661  Save: True
+Begining epoch 32.
+ Step 0
+  Source Pass:  loss 0.0201  classification_loss 0.0127  CSA_loss 0.0426
+  Target Pass:  loss 0.0131  classification_loss 0.0039  CSA_loss 0.0407
+ Step 10
+  Source Pass:  loss 0.0122  classification_loss 0.0042  CSA_loss 0.0360
+  Target Pass:  loss 0.0161  classification_loss 0.0117  CSA_loss 0.0293
+ Step 20
+  Source Pass:  loss 0.0152  classification_loss 0.0069  CSA_loss 0.0399
+  Target Pass:  loss 0.0129  classification_loss 0.0045  CSA_loss 0.0380
+ Step 30
+  Source Pass:  loss 0.0145  classification_loss 0.0067  CSA_loss 0.0379
+  Target Pass:  loss 0.0145  classification_loss 0.0078  CSA_loss 0.0349
+Epoch 32 done. Test accuracy: 0.8633  Best: 0.8683  Save: False
+Begining epoch 33.
+ Step 0
+  Source Pass:  loss 0.0147  classification_loss 0.0072  CSA_loss 0.0373
+  Target Pass:  loss 0.0180  classification_loss 0.0080  CSA_loss 0.0481
+ Step 10
+  Source Pass:  loss 0.0142  classification_loss 0.0076  CSA_loss 0.0340
+  Target Pass:  loss 0.0128  classification_loss 0.0055  CSA_loss 0.0348
+ Step 20
+  Source Pass:  loss 0.0151  classification_loss 0.0065  CSA_loss 0.0411
+  Target Pass:  loss 0.0132  classification_loss 0.0051  CSA_loss 0.0375
+ Step 30
+  Source Pass:  loss 0.0138  classification_loss 0.0064  CSA_loss 0.0360
+  Target Pass:  loss 0.0137  classification_loss 0.0068  CSA_loss 0.0345
+Epoch 33 done. Test accuracy: 0.8622  Best: 0.8683  Save: False
+Begining epoch 34.
+ Step 0
+  Source Pass:  loss 0.0121  classification_loss 0.0068  CSA_loss 0.0281
+  Target Pass:  loss 0.0136  classification_loss 0.0060  CSA_loss 0.0363
+ Step 10
+  Source Pass:  loss 0.0269  classification_loss 0.0210  CSA_loss 0.0446
+  Target Pass:  loss 0.0136  classification_loss 0.0073  CSA_loss 0.0325
+ Step 20
+  Source Pass:  loss 0.0162  classification_loss 0.0088  CSA_loss 0.0382
+  Target Pass:  loss 0.0158  classification_loss 0.0070  CSA_loss 0.0421
+ Step 30
+  Source Pass:  loss 0.0143  classification_loss 0.0074  CSA_loss 0.0350
+  Target Pass:  loss 0.0111  classification_loss 0.0041  CSA_loss 0.0320
+Epoch 34 done. Test accuracy: 0.8583  Best: 0.8683  Save: False
+Begining epoch 35.
+ Step 0
+  Source Pass:  loss 0.0173  classification_loss 0.0089  CSA_loss 0.0425
+  Target Pass:  loss 0.0168  classification_loss 0.0111  CSA_loss 0.0340
+ Step 10
+  Source Pass:  loss 0.0145  classification_loss 0.0101  CSA_loss 0.0276
+  Target Pass:  loss 0.0102  classification_loss 0.0040  CSA_loss 0.0288
+ Step 20
+  Source Pass:  loss 0.0128  classification_loss 0.0069  CSA_loss 0.0304
+  Target Pass:  loss 0.0121  classification_loss 0.0067  CSA_loss 0.0283
+ Step 30
+  Source Pass:  loss 0.0104  classification_loss 0.0041  CSA_loss 0.0295
+  Target Pass:  loss 0.0110  classification_loss 0.0060  CSA_loss 0.0261
+Epoch 35 done. Test accuracy: 0.8656  Best: 0.8683  Save: False
+Begining epoch 36.
+ Step 0
+  Source Pass:  loss 0.0129  classification_loss 0.0047  CSA_loss 0.0372
+  Target Pass:  loss 0.0103  classification_loss 0.0040  CSA_loss 0.0293
+ Step 10
+  Source Pass:  loss 0.0142  classification_loss 0.0069  CSA_loss 0.0363
+  Target Pass:  loss 0.0111  classification_loss 0.0042  CSA_loss 0.0319
+ Step 20
+  Source Pass:  loss 0.0122  classification_loss 0.0063  CSA_loss 0.0298
+  Target Pass:  loss 0.0126  classification_loss 0.0069  CSA_loss 0.0297
+ Step 30
+  Source Pass:  loss 0.0132  classification_loss 0.0060  CSA_loss 0.0347
+  Target Pass:  loss 0.0102  classification_loss 0.0044  CSA_loss 0.0276
+Epoch 36 done. Test accuracy: 0.8694  Best: 0.8683  Save: True
+Begining epoch 37.
+ Step 0
+  Source Pass:  loss 0.0145  classification_loss 0.0065  CSA_loss 0.0385
+  Target Pass:  loss 0.0134  classification_loss 0.0042  CSA_loss 0.0409
+ Step 10
+  Source Pass:  loss 0.0124  classification_loss 0.0064  CSA_loss 0.0306
+  Target Pass:  loss 0.0121  classification_loss 0.0046  CSA_loss 0.0348
+ Step 20
+  Source Pass:  loss 0.0126  classification_loss 0.0046  CSA_loss 0.0363
+  Target Pass:  loss 0.0140  classification_loss 0.0097  CSA_loss 0.0270
+ Step 30
+  Source Pass:  loss 0.0115  classification_loss 0.0055  CSA_loss 0.0295
+  Target Pass:  loss 0.0132  classification_loss 0.0083  CSA_loss 0.0280
+Epoch 37 done. Test accuracy: 0.8689  Best: 0.8694  Save: False
+Begining epoch 38.
+ Step 0
+  Source Pass:  loss 0.0156  classification_loss 0.0088  CSA_loss 0.0360
+  Target Pass:  loss 0.0130  classification_loss 0.0056  CSA_loss 0.0352
+ Step 10
+  Source Pass:  loss 0.0118  classification_loss 0.0049  CSA_loss 0.0326
+  Target Pass:  loss 0.0102  classification_loss 0.0045  CSA_loss 0.0273
+ Step 20
+  Source Pass:  loss 0.0097  classification_loss 0.0045  CSA_loss 0.0253
+  Target Pass:  loss 0.0104  classification_loss 0.0038  CSA_loss 0.0299
+ Step 30
+  Source Pass:  loss 0.0109  classification_loss 0.0049  CSA_loss 0.0292
+  Target Pass:  loss 0.0098  classification_loss 0.0043  CSA_loss 0.0260
+Epoch 38 done. Test accuracy: 0.8628  Best: 0.8694  Save: False
+Begining epoch 39.
+ Step 0
+  Source Pass:  loss 0.0137  classification_loss 0.0065  CSA_loss 0.0353
+  Target Pass:  loss 0.0099  classification_loss 0.0045  CSA_loss 0.0260
+ Step 10
+  Source Pass:  loss 0.0157  classification_loss 0.0093  CSA_loss 0.0349
+  Target Pass:  loss 0.0132  classification_loss 0.0064  CSA_loss 0.0338
+ Step 20
+  Source Pass:  loss 0.0114  classification_loss 0.0056  CSA_loss 0.0291
+  Target Pass:  loss 0.0114  classification_loss 0.0046  CSA_loss 0.0317
+ Step 30
+  Source Pass:  loss 0.0148  classification_loss 0.0098  CSA_loss 0.0295
+  Target Pass:  loss 0.0100  classification_loss 0.0035  CSA_loss 0.0294
+Epoch 39 done. Test accuracy: 0.8606  Best: 0.8694  Save: False
+Begining epoch 40.
+ Step 0
+  Source Pass:  loss 0.0118  classification_loss 0.0061  CSA_loss 0.0287
+  Target Pass:  loss 0.0099  classification_loss 0.0040  CSA_loss 0.0277
+ Step 10
+  Source Pass:  loss 0.0126  classification_loss 0.0081  CSA_loss 0.0261
+  Target Pass:  loss 0.0104  classification_loss 0.0049  CSA_loss 0.0267
+ Step 20
+  Source Pass:  loss 0.0153  classification_loss 0.0107  CSA_loss 0.0290
+  Target Pass:  loss 0.0113  classification_loss 0.0045  CSA_loss 0.0318
+ Step 30
+  Source Pass:  loss 0.0117  classification_loss 0.0040  CSA_loss 0.0346
+  Target Pass:  loss 0.0108  classification_loss 0.0066  CSA_loss 0.0234
+Epoch 40 done. Test accuracy: 0.8678  Best: 0.8694  Save: False
+Begining epoch 41.
+ Step 0
+  Source Pass:  loss 0.0111  classification_loss 0.0045  CSA_loss 0.0307
+  Target Pass:  loss 0.0104  classification_loss 0.0043  CSA_loss 0.0289
+ Step 10
+  Source Pass:  loss 0.0278  classification_loss 0.0240  CSA_loss 0.0393
+  Target Pass:  loss 0.0115  classification_loss 0.0048  CSA_loss 0.0318
+ Step 20
+  Source Pass:  loss 0.0097  classification_loss 0.0045  CSA_loss 0.0254
+  Target Pass:  loss 0.0099  classification_loss 0.0037  CSA_loss 0.0284
+ Step 30
+  Source Pass:  loss 0.0119  classification_loss 0.0059  CSA_loss 0.0299
+  Target Pass:  loss 0.0106  classification_loss 0.0059  CSA_loss 0.0247
+Epoch 41 done. Test accuracy: 0.8617  Best: 0.8694  Save: False
+Begining epoch 42.
+ Step 0
+  Source Pass:  loss 0.0146  classification_loss 0.0082  CSA_loss 0.0338
+  Target Pass:  loss 0.0103  classification_loss 0.0037  CSA_loss 0.0300
+ Step 10
+  Source Pass:  loss 0.0090  classification_loss 0.0055  CSA_loss 0.0195
+  Target Pass:  loss 0.0087  classification_loss 0.0041  CSA_loss 0.0226
+ Step 20
+  Source Pass:  loss 0.0101  classification_loss 0.0049  CSA_loss 0.0257
+  Target Pass:  loss 0.0084  classification_loss 0.0036  CSA_loss 0.0227
+ Step 30
+  Source Pass:  loss 0.0124  classification_loss 0.0074  CSA_loss 0.0275
+  Target Pass:  loss 0.0090  classification_loss 0.0042  CSA_loss 0.0235
+Epoch 42 done. Test accuracy: 0.8628  Best: 0.8694  Save: False
+Begining epoch 43.
+ Step 0
+  Source Pass:  loss 0.0116  classification_loss 0.0063  CSA_loss 0.0272
+  Target Pass:  loss 0.0114  classification_loss 0.0061  CSA_loss 0.0272
+ Step 10
+  Source Pass:  loss 0.0104  classification_loss 0.0041  CSA_loss 0.0294
+  Target Pass:  loss 0.0104  classification_loss 0.0044  CSA_loss 0.0287
+ Step 20
+  Source Pass:  loss 0.0119  classification_loss 0.0047  CSA_loss 0.0337
+  Target Pass:  loss 0.0095  classification_loss 0.0034  CSA_loss 0.0277
+ Step 30
+  Source Pass:  loss 0.0111  classification_loss 0.0051  CSA_loss 0.0289
+  Target Pass:  loss 0.0092  classification_loss 0.0038  CSA_loss 0.0254
+Epoch 43 done. Test accuracy: 0.8622  Best: 0.8694  Save: False
+Begining epoch 44.
+ Step 0
+  Source Pass:  loss 0.0094  classification_loss 0.0038  CSA_loss 0.0264
+  Target Pass:  loss 0.0095  classification_loss 0.0027  CSA_loss 0.0299
+ Step 10
+  Source Pass:  loss 0.0093  classification_loss 0.0045  CSA_loss 0.0237
+  Target Pass:  loss 0.0068  classification_loss 0.0026  CSA_loss 0.0193
+ Step 20
+  Source Pass:  loss 0.0107  classification_loss 0.0053  CSA_loss 0.0269
+  Target Pass:  loss 0.0116  classification_loss 0.0050  CSA_loss 0.0314
+ Step 30
+  Source Pass:  loss 0.0086  classification_loss 0.0036  CSA_loss 0.0236
+  Target Pass:  loss 0.0093  classification_loss 0.0039  CSA_loss 0.0254
+Epoch 44 done. Test accuracy: 0.8656  Best: 0.8694  Save: False
+Begining epoch 45.
+ Step 0
+  Source Pass:  loss 0.0148  classification_loss 0.0107  CSA_loss 0.0273
+  Target Pass:  loss 0.0095  classification_loss 0.0061  CSA_loss 0.0199
+ Step 10
+  Source Pass:  loss 0.0094  classification_loss 0.0047  CSA_loss 0.0236
+  Target Pass:  loss 0.0106  classification_loss 0.0047  CSA_loss 0.0283
+ Step 20
+  Source Pass:  loss 0.0103  classification_loss 0.0061  CSA_loss 0.0230
+  Target Pass:  loss 0.0085  classification_loss 0.0027  CSA_loss 0.0257
+ Step 30
+  Source Pass:  loss 0.0088  classification_loss 0.0043  CSA_loss 0.0223
+  Target Pass:  loss 0.0110  classification_loss 0.0062  CSA_loss 0.0252
+Epoch 45 done. Test accuracy: 0.8656  Best: 0.8694  Save: False
+Begining epoch 46.
+ Step 0
+  Source Pass:  loss 0.0117  classification_loss 0.0075  CSA_loss 0.0243
+  Target Pass:  loss 0.0104  classification_loss 0.0034  CSA_loss 0.0314
+ Step 10
+  Source Pass:  loss 0.0104  classification_loss 0.0039  CSA_loss 0.0300
+  Target Pass:  loss 0.0070  classification_loss 0.0020  CSA_loss 0.0220
+ Step 20
+  Source Pass:  loss 0.0114  classification_loss 0.0051  CSA_loss 0.0306
+  Target Pass:  loss 0.0087  classification_loss 0.0047  CSA_loss 0.0208
+ Step 30
+  Source Pass:  loss 0.0116  classification_loss 0.0080  CSA_loss 0.0226
+  Target Pass:  loss 0.0137  classification_loss 0.0106  CSA_loss 0.0233
+Epoch 46 done. Test accuracy: 0.8694  Best: 0.8694  Save: False
+Begining epoch 47.
+ Step 0
+  Source Pass:  loss 0.0093  classification_loss 0.0041  CSA_loss 0.0246
+  Target Pass:  loss 0.0115  classification_loss 0.0065  CSA_loss 0.0264
+ Step 10
+  Source Pass:  loss 0.0091  classification_loss 0.0043  CSA_loss 0.0234
+  Target Pass:  loss 0.0083  classification_loss 0.0054  CSA_loss 0.0169
+ Step 20
+  Source Pass:  loss 0.0102  classification_loss 0.0045  CSA_loss 0.0273
+  Target Pass:  loss 0.0101  classification_loss 0.0040  CSA_loss 0.0285
+ Step 30
+  Source Pass:  loss 0.0092  classification_loss 0.0056  CSA_loss 0.0200
+  Target Pass:  loss 0.0083  classification_loss 0.0034  CSA_loss 0.0230
+Epoch 47 done. Test accuracy: 0.8722  Best: 0.8694  Save: True
+Begining epoch 48.
+ Step 0
+  Source Pass:  loss 0.0094  classification_loss 0.0040  CSA_loss 0.0255
+  Target Pass:  loss 0.0077  classification_loss 0.0029  CSA_loss 0.0223
+ Step 10
+  Source Pass:  loss 0.0138  classification_loss 0.0095  CSA_loss 0.0267
+  Target Pass:  loss 0.0068  classification_loss 0.0028  CSA_loss 0.0188
+ Step 20
+  Source Pass:  loss 0.0094  classification_loss 0.0042  CSA_loss 0.0250
+  Target Pass:  loss 0.0080  classification_loss 0.0041  CSA_loss 0.0198
+ Step 30
+  Source Pass:  loss 0.0101  classification_loss 0.0050  CSA_loss 0.0255
+  Target Pass:  loss 0.0085  classification_loss 0.0025  CSA_loss 0.0263
+Epoch 48 done. Test accuracy: 0.8672  Best: 0.8722  Save: False
+Begining epoch 49.
+ Step 0
+  Source Pass:  loss 0.0141  classification_loss 0.0117  CSA_loss 0.0215
+  Target Pass:  loss 0.0110  classification_loss 0.0080  CSA_loss 0.0199
+ Step 10
+  Source Pass:  loss 0.0083  classification_loss 0.0039  CSA_loss 0.0213
+  Target Pass:  loss 0.0102  classification_loss 0.0085  CSA_loss 0.0152
+ Step 20
+  Source Pass:  loss 0.0074  classification_loss 0.0033  CSA_loss 0.0198
+  Target Pass:  loss 0.0099  classification_loss 0.0045  CSA_loss 0.0263
+ Step 30
+  Source Pass:  loss 0.0097  classification_loss 0.0064  CSA_loss 0.0194
+  Target Pass:  loss 0.0088  classification_loss 0.0043  CSA_loss 0.0222
+Epoch 49 done. Test accuracy: 0.8656  Best: 0.8722  Save: False
+Begining epoch 50.
+ Step 0
+  Source Pass:  loss 0.0084  classification_loss 0.0024  CSA_loss 0.0262
+  Target Pass:  loss 0.0088  classification_loss 0.0035  CSA_loss 0.0246
+ Step 10
+  Source Pass:  loss 0.0086  classification_loss 0.0041  CSA_loss 0.0223
+  Target Pass:  loss 0.0086  classification_loss 0.0038  CSA_loss 0.0230
+ Step 20
+  Source Pass:  loss 0.0086  classification_loss 0.0029  CSA_loss 0.0257
+  Target Pass:  loss 0.0094  classification_loss 0.0042  CSA_loss 0.0252
+ Step 30
+  Source Pass:  loss 0.0080  classification_loss 0.0041  CSA_loss 0.0195
+  Target Pass:  loss 0.0092  classification_loss 0.0054  CSA_loss 0.0207
+Epoch 50 done. Test accuracy: 0.8656  Best: 0.8722  Save: False
+Begining epoch 51.
+ Step 0
+  Source Pass:  loss 0.0090  classification_loss 0.0042  CSA_loss 0.0234
+  Target Pass:  loss 0.0087  classification_loss 0.0047  CSA_loss 0.0207
+ Step 10
+  Source Pass:  loss 0.0143  classification_loss 0.0098  CSA_loss 0.0277
+  Target Pass:  loss 0.0067  classification_loss 0.0036  CSA_loss 0.0159
+ Step 20
+  Source Pass:  loss 0.0093  classification_loss 0.0045  CSA_loss 0.0237
+  Target Pass:  loss 0.0090  classification_loss 0.0052  CSA_loss 0.0206
+ Step 30
+  Source Pass:  loss 0.0094  classification_loss 0.0035  CSA_loss 0.0271
+  Target Pass:  loss 0.0078  classification_loss 0.0041  CSA_loss 0.0190
+Epoch 51 done. Test accuracy: 0.8589  Best: 0.8722  Save: False
+Begining epoch 52.
+ Step 0
+  Source Pass:  loss 0.0214  classification_loss 0.0159  CSA_loss 0.0379
+  Target Pass:  loss 0.0089  classification_loss 0.0038  CSA_loss 0.0243
+ Step 10
+  Source Pass:  loss 0.0086  classification_loss 0.0029  CSA_loss 0.0258
+  Target Pass:  loss 0.0117  classification_loss 0.0057  CSA_loss 0.0299
+ Step 20
+  Source Pass:  loss 0.0097  classification_loss 0.0052  CSA_loss 0.0233
+  Target Pass:  loss 0.0092  classification_loss 0.0049  CSA_loss 0.0223
+ Step 30
+  Source Pass:  loss 0.0102  classification_loss 0.0071  CSA_loss 0.0194
+  Target Pass:  loss 0.0076  classification_loss 0.0040  CSA_loss 0.0184
+Epoch 52 done. Test accuracy: 0.8678  Best: 0.8722  Save: False
+Begining epoch 53.
+ Step 0
+  Source Pass:  loss 0.0071  classification_loss 0.0027  CSA_loss 0.0204
+  Target Pass:  loss 0.0067  classification_loss 0.0034  CSA_loss 0.0163
+ Step 10
+  Source Pass:  loss 0.0074  classification_loss 0.0029  CSA_loss 0.0209
+  Target Pass:  loss 0.0049  classification_loss 0.0015  CSA_loss 0.0150
+ Step 20
+  Source Pass:  loss 0.0090  classification_loss 0.0054  CSA_loss 0.0198
+  Target Pass:  loss 0.0071  classification_loss 0.0026  CSA_loss 0.0207
+ Step 30
+  Source Pass:  loss 0.0098  classification_loss 0.0078  CSA_loss 0.0156
+  Target Pass:  loss 0.0087  classification_loss 0.0042  CSA_loss 0.0221
+Epoch 53 done. Test accuracy: 0.8622  Best: 0.8722  Save: False
+Begining epoch 54.
+ Step 0
+  Source Pass:  loss 0.0078  classification_loss 0.0033  CSA_loss 0.0213
+  Target Pass:  loss 0.0082  classification_loss 0.0053  CSA_loss 0.0170
+ Step 10
+  Source Pass:  loss 0.0092  classification_loss 0.0039  CSA_loss 0.0252
+  Target Pass:  loss 0.0066  classification_loss 0.0026  CSA_loss 0.0189
+ Step 20
+  Source Pass:  loss 0.0082  classification_loss 0.0049  CSA_loss 0.0182
+  Target Pass:  loss 0.0077  classification_loss 0.0039  CSA_loss 0.0189
+ Step 30
+  Source Pass:  loss 0.0084  classification_loss 0.0028  CSA_loss 0.0252
+  Target Pass:  loss 0.0088  classification_loss 0.0041  CSA_loss 0.0228
+Epoch 54 done. Test accuracy: 0.8672  Best: 0.8722  Save: False
+Begining epoch 55.
+ Step 0
+  Source Pass:  loss 0.0123  classification_loss 0.0077  CSA_loss 0.0260
+  Target Pass:  loss 0.0067  classification_loss 0.0028  CSA_loss 0.0182
+ Step 10
+  Source Pass:  loss 0.0064  classification_loss 0.0039  CSA_loss 0.0142
+  Target Pass:  loss 0.0058  classification_loss 0.0017  CSA_loss 0.0180
+ Step 20
+  Source Pass:  loss 0.0098  classification_loss 0.0055  CSA_loss 0.0228
+  Target Pass:  loss 0.0060  classification_loss 0.0015  CSA_loss 0.0193
+ Step 30
+  Source Pass:  loss 0.0070  classification_loss 0.0024  CSA_loss 0.0210
+  Target Pass:  loss 0.0057  classification_loss 0.0021  CSA_loss 0.0166
+Epoch 55 done. Test accuracy: 0.8700  Best: 0.8722  Save: False
+Begining epoch 56.
+ Step 0
+  Source Pass:  loss 0.0064  classification_loss 0.0016  CSA_loss 0.0208
+  Target Pass:  loss 0.0082  classification_loss 0.0044  CSA_loss 0.0194
+ Step 10
+  Source Pass:  loss 0.0088  classification_loss 0.0053  CSA_loss 0.0195
+  Target Pass:  loss 0.0082  classification_loss 0.0047  CSA_loss 0.0186
+ Step 20
+  Source Pass:  loss 0.0082  classification_loss 0.0030  CSA_loss 0.0235
+  Target Pass:  loss 0.0062  classification_loss 0.0023  CSA_loss 0.0181
+ Step 30
+  Source Pass:  loss 0.0076  classification_loss 0.0037  CSA_loss 0.0191
+  Target Pass:  loss 0.0065  classification_loss 0.0025  CSA_loss 0.0188
+Epoch 56 done. Test accuracy: 0.8700  Best: 0.8722  Save: False
+Begining epoch 57.
+ Step 0
+  Source Pass:  loss 0.0077  classification_loss 0.0032  CSA_loss 0.0214
+  Target Pass:  loss 0.0079  classification_loss 0.0032  CSA_loss 0.0219
+ Step 10
+  Source Pass:  loss 0.0075  classification_loss 0.0026  CSA_loss 0.0225
+  Target Pass:  loss 0.0071  classification_loss 0.0027  CSA_loss 0.0204
+ Step 20
+  Source Pass:  loss 0.0092  classification_loss 0.0036  CSA_loss 0.0257
+  Target Pass:  loss 0.0064  classification_loss 0.0021  CSA_loss 0.0191
+ Step 30
+  Source Pass:  loss 0.0075  classification_loss 0.0042  CSA_loss 0.0173
+  Target Pass:  loss 0.0073  classification_loss 0.0042  CSA_loss 0.0167
+Epoch 57 done. Test accuracy: 0.8661  Best: 0.8722  Save: False
+Begining epoch 58.
+ Step 0
+  Source Pass:  loss 0.0074  classification_loss 0.0047  CSA_loss 0.0156
+  Target Pass:  loss 0.0075  classification_loss 0.0032  CSA_loss 0.0205
+ Step 10
+  Source Pass:  loss 0.0080  classification_loss 0.0030  CSA_loss 0.0229
+  Target Pass:  loss 0.0058  classification_loss 0.0024  CSA_loss 0.0158
+ Step 20
+  Source Pass:  loss 0.0082  classification_loss 0.0040  CSA_loss 0.0208
+  Target Pass:  loss 0.0079  classification_loss 0.0024  CSA_loss 0.0241
+ Step 30
+  Source Pass:  loss 0.0083  classification_loss 0.0045  CSA_loss 0.0195
+  Target Pass:  loss 0.0069  classification_loss 0.0031  CSA_loss 0.0182
+Epoch 58 done. Test accuracy: 0.8689  Best: 0.8722  Save: False
+Begining epoch 59.
+ Step 0
+  Source Pass:  loss 0.0110  classification_loss 0.0077  CSA_loss 0.0208
+  Target Pass:  loss 0.0050  classification_loss 0.0016  CSA_loss 0.0152
+ Step 10
+  Source Pass:  loss 0.0083  classification_loss 0.0044  CSA_loss 0.0200
+  Target Pass:  loss 0.0077  classification_loss 0.0042  CSA_loss 0.0183
+ Step 20
+  Source Pass:  loss 0.0100  classification_loss 0.0053  CSA_loss 0.0242
+  Target Pass:  loss 0.0067  classification_loss 0.0019  CSA_loss 0.0211
+ Step 30
+  Source Pass:  loss 0.0074  classification_loss 0.0038  CSA_loss 0.0184
+  Target Pass:  loss 0.0081  classification_loss 0.0048  CSA_loss 0.0182
+Epoch 59 done. Test accuracy: 0.8672  Best: 0.8722  Save: False
+Begining epoch 60.
+ Step 0
+  Source Pass:  loss 0.0114  classification_loss 0.0096  CSA_loss 0.0168
+  Target Pass:  loss 0.0064  classification_loss 0.0019  CSA_loss 0.0198
+ Step 10
+  Source Pass:  loss 0.0073  classification_loss 0.0049  CSA_loss 0.0148
+  Target Pass:  loss 0.0063  classification_loss 0.0034  CSA_loss 0.0153
+ Step 20
+  Source Pass:  loss 0.0073  classification_loss 0.0022  CSA_loss 0.0225
+  Target Pass:  loss 0.0078  classification_loss 0.0033  CSA_loss 0.0215
+ Step 30
+  Source Pass:  loss 0.0062  classification_loss 0.0027  CSA_loss 0.0167
+  Target Pass:  loss 0.0060  classification_loss 0.0033  CSA_loss 0.0143
+Epoch 60 done. Test accuracy: 0.8683  Best: 0.8722  Save: False
+Begining epoch 61.
+ Step 0
+  Source Pass:  loss 0.0063  classification_loss 0.0021  CSA_loss 0.0189
+  Target Pass:  loss 0.0074  classification_loss 0.0036  CSA_loss 0.0190
+ Step 10
+  Source Pass:  loss 0.0084  classification_loss 0.0040  CSA_loss 0.0213
+  Target Pass:  loss 0.0060  classification_loss 0.0024  CSA_loss 0.0169
+ Step 20
+  Source Pass:  loss 0.0075  classification_loss 0.0037  CSA_loss 0.0192
+  Target Pass:  loss 0.0063  classification_loss 0.0034  CSA_loss 0.0150
+ Step 30
+  Source Pass:  loss 0.0071  classification_loss 0.0035  CSA_loss 0.0179
+  Target Pass:  loss 0.0089  classification_loss 0.0061  CSA_loss 0.0171
+Epoch 61 done. Test accuracy: 0.8689  Best: 0.8722  Save: False
+Begining epoch 62.
+ Step 0
+  Source Pass:  loss 0.0070  classification_loss 0.0037  CSA_loss 0.0170
+  Target Pass:  loss 0.0054  classification_loss 0.0026  CSA_loss 0.0137
+ Step 10
+  Source Pass:  loss 0.0080  classification_loss 0.0033  CSA_loss 0.0219
+  Target Pass:  loss 0.0068  classification_loss 0.0031  CSA_loss 0.0181
+ Step 20
+  Source Pass:  loss 0.0084  classification_loss 0.0052  CSA_loss 0.0178
+  Target Pass:  loss 0.0089  classification_loss 0.0052  CSA_loss 0.0202
+ Step 30
+  Source Pass:  loss 0.0056  classification_loss 0.0022  CSA_loss 0.0157
+  Target Pass:  loss 0.0054  classification_loss 0.0022  CSA_loss 0.0150
+Epoch 62 done. Test accuracy: 0.8656  Best: 0.8722  Save: False
+Begining epoch 63.
+ Step 0
+  Source Pass:  loss 0.0056  classification_loss 0.0026  CSA_loss 0.0147
+  Target Pass:  loss 0.0063  classification_loss 0.0031  CSA_loss 0.0159
+ Step 10
+  Source Pass:  loss 0.0090  classification_loss 0.0078  CSA_loss 0.0128
+  Target Pass:  loss 0.0068  classification_loss 0.0014  CSA_loss 0.0231
+ Step 20
+  Source Pass:  loss 0.0064  classification_loss 0.0027  CSA_loss 0.0176
+  Target Pass:  loss 0.0056  classification_loss 0.0013  CSA_loss 0.0182
+ Step 30
+  Source Pass:  loss 0.0069  classification_loss 0.0038  CSA_loss 0.0165
+  Target Pass:  loss 0.0077  classification_loss 0.0050  CSA_loss 0.0157
+Epoch 63 done. Test accuracy: 0.8661  Best: 0.8722  Save: False
+Begining epoch 64.
+ Step 0
+  Source Pass:  loss 0.0079  classification_loss 0.0037  CSA_loss 0.0203
+  Target Pass:  loss 0.0069  classification_loss 0.0026  CSA_loss 0.0199
+ Step 10
+  Source Pass:  loss 0.0062  classification_loss 0.0023  CSA_loss 0.0179
+  Target Pass:  loss 0.0067  classification_loss 0.0038  CSA_loss 0.0152
+ Step 20
+  Source Pass:  loss 0.0058  classification_loss 0.0027  CSA_loss 0.0153
+  Target Pass:  loss 0.0074  classification_loss 0.0044  CSA_loss 0.0165
+ Step 30
+  Source Pass:  loss 0.0071  classification_loss 0.0027  CSA_loss 0.0203
+  Target Pass:  loss 0.0060  classification_loss 0.0032  CSA_loss 0.0142
+Epoch 64 done. Test accuracy: 0.8694  Best: 0.8722  Save: False
+Begining epoch 65.
+ Step 0
+  Source Pass:  loss 0.0064  classification_loss 0.0038  CSA_loss 0.0143
+  Target Pass:  loss 0.0070  classification_loss 0.0034  CSA_loss 0.0179
+ Step 10
+  Source Pass:  loss 0.0074  classification_loss 0.0050  CSA_loss 0.0146
+  Target Pass:  loss 0.0072  classification_loss 0.0024  CSA_loss 0.0214
+ Step 20
+  Source Pass:  loss 0.0071  classification_loss 0.0027  CSA_loss 0.0205
+  Target Pass:  loss 0.0071  classification_loss 0.0031  CSA_loss 0.0192
+ Step 30
+  Source Pass:  loss 0.0077  classification_loss 0.0032  CSA_loss 0.0212
+  Target Pass:  loss 0.0064  classification_loss 0.0035  CSA_loss 0.0153
+Epoch 65 done. Test accuracy: 0.8694  Best: 0.8722  Save: False
+Begining epoch 66.
+ Step 0
+  Source Pass:  loss 0.0049  classification_loss 0.0012  CSA_loss 0.0162
+  Target Pass:  loss 0.0066  classification_loss 0.0026  CSA_loss 0.0186
+ Step 10
+  Source Pass:  loss 0.0079  classification_loss 0.0052  CSA_loss 0.0162
+  Target Pass:  loss 0.0052  classification_loss 0.0019  CSA_loss 0.0152
+ Step 20
+  Source Pass:  loss 0.0065  classification_loss 0.0033  CSA_loss 0.0163
+  Target Pass:  loss 0.0055  classification_loss 0.0021  CSA_loss 0.0157
+ Step 30
+  Source Pass:  loss 0.0066  classification_loss 0.0026  CSA_loss 0.0186
+  Target Pass:  loss 0.0063  classification_loss 0.0037  CSA_loss 0.0140
+Epoch 66 done. Test accuracy: 0.8661  Best: 0.8722  Save: False
+Begining epoch 67.
+ Step 0
+  Source Pass:  loss 0.0069  classification_loss 0.0041  CSA_loss 0.0152
+  Target Pass:  loss 0.0069  classification_loss 0.0029  CSA_loss 0.0190
+ Step 10
+  Source Pass:  loss 0.0065  classification_loss 0.0036  CSA_loss 0.0155
+  Target Pass:  loss 0.0061  classification_loss 0.0037  CSA_loss 0.0132
+ Step 20
+  Source Pass:  loss 0.0072  classification_loss 0.0026  CSA_loss 0.0209
+  Target Pass:  loss 0.0081  classification_loss 0.0046  CSA_loss 0.0186
+ Step 30
+  Source Pass:  loss 0.0065  classification_loss 0.0034  CSA_loss 0.0158
+  Target Pass:  loss 0.0061  classification_loss 0.0029  CSA_loss 0.0156
+Epoch 67 done. Test accuracy: 0.8678  Best: 0.8722  Save: False
+Begining epoch 68.
+ Step 0
+  Source Pass:  loss 0.0057  classification_loss 0.0035  CSA_loss 0.0125
+  Target Pass:  loss 0.0051  classification_loss 0.0034  CSA_loss 0.0104
+ Step 10
+  Source Pass:  loss 0.0112  classification_loss 0.0088  CSA_loss 0.0184
+  Target Pass:  loss 0.0055  classification_loss 0.0024  CSA_loss 0.0149
+ Step 20
+  Source Pass:  loss 0.0062  classification_loss 0.0040  CSA_loss 0.0128
+  Target Pass:  loss 0.0064  classification_loss 0.0019  CSA_loss 0.0198
+ Step 30
+  Source Pass:  loss 0.0060  classification_loss 0.0033  CSA_loss 0.0141
+  Target Pass:  loss 0.0060  classification_loss 0.0027  CSA_loss 0.0159
+Epoch 68 done. Test accuracy: 0.8672  Best: 0.8722  Save: False
+Begining epoch 69.
+ Step 0
+  Source Pass:  loss 0.0060  classification_loss 0.0025  CSA_loss 0.0164
+  Target Pass:  loss 0.0054  classification_loss 0.0027  CSA_loss 0.0135
+ Step 10
+  Source Pass:  loss 0.0055  classification_loss 0.0026  CSA_loss 0.0144
+  Target Pass:  loss 0.0050  classification_loss 0.0022  CSA_loss 0.0136
+ Step 20
+  Source Pass:  loss 0.0047  classification_loss 0.0019  CSA_loss 0.0133
+  Target Pass:  loss 0.0071  classification_loss 0.0018  CSA_loss 0.0229
+ Step 30
+  Source Pass:  loss 0.0064  classification_loss 0.0026  CSA_loss 0.0177
+  Target Pass:  loss 0.0056  classification_loss 0.0022  CSA_loss 0.0155
+Epoch 69 done. Test accuracy: 0.8700  Best: 0.8722  Save: False
+Begining epoch 70.
+ Step 0
+  Source Pass:  loss 0.0060  classification_loss 0.0036  CSA_loss 0.0135
+  Target Pass:  loss 0.0051  classification_loss 0.0019  CSA_loss 0.0149
+ Step 10
+  Source Pass:  loss 0.0047  classification_loss 0.0018  CSA_loss 0.0134
+  Target Pass:  loss 0.0054  classification_loss 0.0028  CSA_loss 0.0132
+ Step 20
+  Source Pass:  loss 0.0060  classification_loss 0.0032  CSA_loss 0.0143
+  Target Pass:  loss 0.0060  classification_loss 0.0025  CSA_loss 0.0166
+ Step 30
+  Source Pass:  loss 0.0056  classification_loss 0.0014  CSA_loss 0.0181
+  Target Pass:  loss 0.0043  classification_loss 0.0023  CSA_loss 0.0105
+Epoch 70 done. Test accuracy: 0.8706  Best: 0.8722  Save: False
+Begining epoch 71.
+ Step 0
+  Source Pass:  loss 0.0051  classification_loss 0.0018  CSA_loss 0.0151
+  Target Pass:  loss 0.0064  classification_loss 0.0037  CSA_loss 0.0144
+ Step 10
+  Source Pass:  loss 0.0073  classification_loss 0.0031  CSA_loss 0.0198
+  Target Pass:  loss 0.0056  classification_loss 0.0024  CSA_loss 0.0152
+ Step 20
+  Source Pass:  loss 0.0065  classification_loss 0.0033  CSA_loss 0.0162
+  Target Pass:  loss 0.0051  classification_loss 0.0027  CSA_loss 0.0125
+ Step 30
+  Source Pass:  loss 0.0064  classification_loss 0.0020  CSA_loss 0.0199
+  Target Pass:  loss 0.0048  classification_loss 0.0022  CSA_loss 0.0125
+Epoch 71 done. Test accuracy: 0.8694  Best: 0.8722  Save: False
+Begining epoch 72.
+ Step 0
+  Source Pass:  loss 0.0059  classification_loss 0.0027  CSA_loss 0.0154
+  Target Pass:  loss 0.0037  classification_loss 0.0014  CSA_loss 0.0105
+ Step 10
+  Source Pass:  loss 0.0063  classification_loss 0.0037  CSA_loss 0.0144
+  Target Pass:  loss 0.0068  classification_loss 0.0047  CSA_loss 0.0134
+ Step 20
+  Source Pass:  loss 0.0067  classification_loss 0.0028  CSA_loss 0.0181
+  Target Pass:  loss 0.0067  classification_loss 0.0029  CSA_loss 0.0179
+ Step 30
+  Source Pass:  loss 0.0062  classification_loss 0.0024  CSA_loss 0.0176
+  Target Pass:  loss 0.0039  classification_loss 0.0014  CSA_loss 0.0112
+Epoch 72 done. Test accuracy: 0.8733  Best: 0.8722  Save: True
+Begining epoch 73.
+ Step 0
+  Source Pass:  loss 0.0059  classification_loss 0.0023  CSA_loss 0.0165
+  Target Pass:  loss 0.0047  classification_loss 0.0012  CSA_loss 0.0152
+ Step 10
+  Source Pass:  loss 0.0053  classification_loss 0.0024  CSA_loss 0.0139
+  Target Pass:  loss 0.0041  classification_loss 0.0019  CSA_loss 0.0108
+ Step 20
+  Source Pass:  loss 0.0056  classification_loss 0.0033  CSA_loss 0.0123
+  Target Pass:  loss 0.0046  classification_loss 0.0026  CSA_loss 0.0108
+ Step 30
+  Source Pass:  loss 0.0055  classification_loss 0.0023  CSA_loss 0.0151
+  Target Pass:  loss 0.0049  classification_loss 0.0019  CSA_loss 0.0137
+Epoch 73 done. Test accuracy: 0.8678  Best: 0.8733  Save: False
+Begining epoch 74.
+ Step 0
+  Source Pass:  loss 0.0059  classification_loss 0.0031  CSA_loss 0.0142
+  Target Pass:  loss 0.0052  classification_loss 0.0031  CSA_loss 0.0117
+ Step 10
+  Source Pass:  loss 0.0079  classification_loss 0.0043  CSA_loss 0.0187
+  Target Pass:  loss 0.0040  classification_loss 0.0011  CSA_loss 0.0127
+ Step 20
+  Source Pass:  loss 0.0056  classification_loss 0.0022  CSA_loss 0.0161
+  Target Pass:  loss 0.0076  classification_loss 0.0019  CSA_loss 0.0247
+ Step 30
+  Source Pass:  loss 0.0057  classification_loss 0.0028  CSA_loss 0.0143
+  Target Pass:  loss 0.0037  classification_loss 0.0014  CSA_loss 0.0105
+Epoch 74 done. Test accuracy: 0.8683  Best: 0.8733  Save: False
+Begining epoch 75.
+ Step 0
+  Source Pass:  loss 0.0068  classification_loss 0.0027  CSA_loss 0.0193
+  Target Pass:  loss 0.0038  classification_loss 0.0010  CSA_loss 0.0123
+ Step 10
+  Source Pass:  loss 0.0061  classification_loss 0.0030  CSA_loss 0.0154
+  Target Pass:  loss 0.0067  classification_loss 0.0039  CSA_loss 0.0150
+ Step 20
+  Source Pass:  loss 0.0055  classification_loss 0.0021  CSA_loss 0.0156
+  Target Pass:  loss 0.0057  classification_loss 0.0028  CSA_loss 0.0145
+ Step 30
+  Source Pass:  loss 0.0067  classification_loss 0.0034  CSA_loss 0.0164
+  Target Pass:  loss 0.0055  classification_loss 0.0037  CSA_loss 0.0108
+Epoch 75 done. Test accuracy: 0.8683  Best: 0.8733  Save: False
+Begining epoch 76.
+ Step 0
+  Source Pass:  loss 0.0054  classification_loss 0.0019  CSA_loss 0.0160
+  Target Pass:  loss 0.0046  classification_loss 0.0022  CSA_loss 0.0118
+ Step 10
+  Source Pass:  loss 0.0052  classification_loss 0.0027  CSA_loss 0.0126
+  Target Pass:  loss 0.0064  classification_loss 0.0042  CSA_loss 0.0130
+ Step 20
+  Source Pass:  loss 0.0083  classification_loss 0.0059  CSA_loss 0.0156
+  Target Pass:  loss 0.0039  classification_loss 0.0009  CSA_loss 0.0130
+ Step 30
+  Source Pass:  loss 0.0056  classification_loss 0.0031  CSA_loss 0.0132
+  Target Pass:  loss 0.0047  classification_loss 0.0028  CSA_loss 0.0105
+Epoch 76 done. Test accuracy: 0.8717  Best: 0.8733  Save: False
+Begining epoch 77.
+ Step 0
+  Source Pass:  loss 0.0044  classification_loss 0.0014  CSA_loss 0.0134
+  Target Pass:  loss 0.0050  classification_loss 0.0014  CSA_loss 0.0159
+ Step 10
+  Source Pass:  loss 0.0041  classification_loss 0.0014  CSA_loss 0.0120
+  Target Pass:  loss 0.0054  classification_loss 0.0031  CSA_loss 0.0123
+ Step 20
+  Source Pass:  loss 0.0045  classification_loss 0.0023  CSA_loss 0.0111
+  Target Pass:  loss 0.0051  classification_loss 0.0025  CSA_loss 0.0131
+ Step 30
+  Source Pass:  loss 0.0062  classification_loss 0.0042  CSA_loss 0.0122
+  Target Pass:  loss 0.0047  classification_loss 0.0013  CSA_loss 0.0151
+Epoch 77 done. Test accuracy: 0.8728  Best: 0.8733  Save: False
+Begining epoch 78.
+ Step 0
+  Source Pass:  loss 0.0043  classification_loss 0.0016  CSA_loss 0.0126
+  Target Pass:  loss 0.0050  classification_loss 0.0015  CSA_loss 0.0152
+ Step 10
+  Source Pass:  loss 0.0078  classification_loss 0.0042  CSA_loss 0.0185
+  Target Pass:  loss 0.0057  classification_loss 0.0019  CSA_loss 0.0173
+ Step 20
+  Source Pass:  loss 0.0054  classification_loss 0.0022  CSA_loss 0.0153
+  Target Pass:  loss 0.0047  classification_loss 0.0024  CSA_loss 0.0118
+ Step 30
+  Source Pass:  loss 0.0044  classification_loss 0.0012  CSA_loss 0.0139
+  Target Pass:  loss 0.0036  classification_loss 0.0011  CSA_loss 0.0109
+Epoch 78 done. Test accuracy: 0.8667  Best: 0.8733  Save: False
+Begining epoch 79.
+ Step 0
+  Source Pass:  loss 0.0070  classification_loss 0.0056  CSA_loss 0.0113
+  Target Pass:  loss 0.0058  classification_loss 0.0039  CSA_loss 0.0114
+ Step 10
+  Source Pass:  loss 0.0046  classification_loss 0.0019  CSA_loss 0.0126
+  Target Pass:  loss 0.0058  classification_loss 0.0037  CSA_loss 0.0120
+ Step 20
+  Source Pass:  loss 0.0051  classification_loss 0.0026  CSA_loss 0.0126
+  Target Pass:  loss 0.0047  classification_loss 0.0018  CSA_loss 0.0132
+ Step 30
+  Source Pass:  loss 0.0042  classification_loss 0.0005  CSA_loss 0.0150
+  Target Pass:  loss 0.0044  classification_loss 0.0019  CSA_loss 0.0119
+Epoch 79 done. Test accuracy: 0.8711  Best: 0.8733  Save: False
+
+
+Repetition 0 completed in 42 secs
+ Best accuracy for 1 target sample per class and repetition 0 is 0.8733.
+  Average acc: 0.8604 (±0.02)

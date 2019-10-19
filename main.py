@@ -12,7 +12,7 @@ from keras.layers import Input, Lambda, Convolution2D, MaxPooling2D
 from keras.models import Sequential, Model
 from keras.utils import np_utils
 
-VERBOSE = False
+VERBOSE = True
 
 
 def printn(string):
@@ -230,8 +230,8 @@ def training_the_model(model, domain_adaptation_task, repetition, sample_per_cla
 
             target_loss = model.train_on_batch([X2[i * nn:(i + 1) * nn, :, :, :], X1[i * nn:(i + 1) * nn, :, :, :]],
                                                [y2[i * nn:(i + 1) * nn, :], yc[i * nn:(i + 1) * nn, ]])
-            if i % 30 == 0 and VERBOSE:
-                print('Step {}'.format(i))
+            if i % 10 == 0 and VERBOSE:
+                print(' Step {}'.format(i))
                 print('  Source Pass:  {}'.format(
                     '  '.join(
                         ['{} {:0.4f}'.format(model.metrics_names[i], source_loss[i]) for i in range(len(source_loss))])

@@ -1,0 +1,109 @@
+Start time: 2019-10-19 14:35
+Domain Adaptation Task: MNIST_to_USPS
+Creating pairs for repetition: 0 and sample_per_class: 7
+
+Loading training data from ./row_data/MNIST_to_USPS_XY_repetition_0_sample_per_class_7.npy
+  Target Features, shape (70, 16, 16)
+  Target Labels, shape (70,)
+  Source Features, shape (2000, 16, 16)
+  Source Labels, shape (2000,)
+
+Creating positive and negative pairs
+  Number of positive pairs: 14000
+  Number of negative pairs: 126000
+
+Constructing training pairs
+  Using 14000 positive pairs
+  Using 42000 negative pairs
+  Total number of training pairs: 56000
+
+Creating and storing training examples on disk
+
+
+Training the model - epochs=80  batch_size=256  n_steps=219  n_train_samples=56000
+Test data loaded: target feature shape=(1800, 16, 16, 1)  label shape=(1800, 10)
+Epoch  0 done. Test accuracy: 0.9394  Best: 0.0000  Save: True
+Epoch  1 done. Test accuracy: 0.9394  Best: 0.9394  Save: False
+Epoch  2 done. Test accuracy: 0.9433  Best: 0.9394  Save: True
+Epoch  3 done. Test accuracy: 0.9456  Best: 0.9433  Save: True
+Epoch  4 done. Test accuracy: 0.9439  Best: 0.9456  Save: False
+Epoch  5 done. Test accuracy: 0.9389  Best: 0.9456  Save: False
+Epoch  6 done. Test accuracy: 0.9444  Best: 0.9456  Save: False
+Epoch  7 done. Test accuracy: 0.9456  Best: 0.9456  Save: False
+Epoch  8 done. Test accuracy: 0.9417  Best: 0.9456  Save: False
+Epoch  9 done. Test accuracy: 0.9433  Best: 0.9456  Save: False
+Epoch 10 done. Test accuracy: 0.9461  Best: 0.9456  Save: True
+Epoch 11 done. Test accuracy: 0.9444  Best: 0.9461  Save: False
+Epoch 12 done. Test accuracy: 0.9461  Best: 0.9461  Save: False
+Epoch 13 done. Test accuracy: 0.9461  Best: 0.9461  Save: False
+Epoch 14 done. Test accuracy: 0.9472  Best: 0.9461  Save: True
+Epoch 15 done. Test accuracy: 0.9417  Best: 0.9472  Save: False
+Epoch 16 done. Test accuracy: 0.9411  Best: 0.9472  Save: False
+Epoch 17 done. Test accuracy: 0.9417  Best: 0.9472  Save: False
+Epoch 18 done. Test accuracy: 0.9394  Best: 0.9472  Save: False
+Epoch 19 done. Test accuracy: 0.9406  Best: 0.9472  Save: False
+Epoch 20 done. Test accuracy: 0.9422  Best: 0.9472  Save: False
+Epoch 21 done. Test accuracy: 0.9417  Best: 0.9472  Save: False
+Epoch 22 done. Test accuracy: 0.9428  Best: 0.9472  Save: False
+Epoch 23 done. Test accuracy: 0.9428  Best: 0.9472  Save: False
+Epoch 24 done. Test accuracy: 0.9422  Best: 0.9472  Save: False
+Epoch 25 done. Test accuracy: 0.9433  Best: 0.9472  Save: False
+Epoch 26 done. Test accuracy: 0.9428  Best: 0.9472  Save: False
+Epoch 27 done. Test accuracy: 0.9433  Best: 0.9472  Save: False
+Epoch 28 done. Test accuracy: 0.9422  Best: 0.9472  Save: False
+Epoch 29 done. Test accuracy: 0.9417  Best: 0.9472  Save: False
+Epoch 30 done. Test accuracy: 0.9417  Best: 0.9472  Save: False
+Epoch 31 done. Test accuracy: 0.9433  Best: 0.9472  Save: False
+Epoch 32 done. Test accuracy: 0.9417  Best: 0.9472  Save: False
+Epoch 33 done. Test accuracy: 0.9439  Best: 0.9472  Save: False
+Epoch 34 done. Test accuracy: 0.9411  Best: 0.9472  Save: False
+Epoch 35 done. Test accuracy: 0.9417  Best: 0.9472  Save: False
+Epoch 36 done. Test accuracy: 0.9444  Best: 0.9472  Save: False
+Epoch 37 done. Test accuracy: 0.9406  Best: 0.9472  Save: False
+Epoch 38 done. Test accuracy: 0.9428  Best: 0.9472  Save: False
+Epoch 39 done. Test accuracy: 0.9439  Best: 0.9472  Save: False
+Epoch 40 done. Test accuracy: 0.9422  Best: 0.9472  Save: False
+Epoch 41 done. Test accuracy: 0.9428  Best: 0.9472  Save: False
+Epoch 42 done. Test accuracy: 0.9433  Best: 0.9472  Save: False
+Epoch 43 done. Test accuracy: 0.9433  Best: 0.9472  Save: False
+Epoch 44 done. Test accuracy: 0.9417  Best: 0.9472  Save: False
+Epoch 45 done. Test accuracy: 0.9433  Best: 0.9472  Save: False
+Epoch 46 done. Test accuracy: 0.9428  Best: 0.9472  Save: False
+Epoch 47 done. Test accuracy: 0.9406  Best: 0.9472  Save: False
+Epoch 48 done. Test accuracy: 0.9378  Best: 0.9472  Save: False
+Epoch 49 done. Test accuracy: 0.9450  Best: 0.9472  Save: False
+Epoch 50 done. Test accuracy: 0.9411  Best: 0.9472  Save: False
+Epoch 51 done. Test accuracy: 0.9417  Best: 0.9472  Save: False
+Epoch 52 done. Test accuracy: 0.9400  Best: 0.9472  Save: False
+Epoch 53 done. Test accuracy: 0.9400  Best: 0.9472  Save: False
+Epoch 54 done. Test accuracy: 0.9428  Best: 0.9472  Save: False
+Epoch 55 done. Test accuracy: 0.9439  Best: 0.9472  Save: False
+Epoch 56 done. Test accuracy: 0.9406  Best: 0.9472  Save: False
+Epoch 57 done. Test accuracy: 0.9450  Best: 0.9472  Save: False
+Epoch 58 done. Test accuracy: 0.9422  Best: 0.9472  Save: False
+Epoch 59 done. Test accuracy: 0.9400  Best: 0.9472  Save: False
+Epoch 60 done. Test accuracy: 0.9433  Best: 0.9472  Save: False
+Epoch 61 done. Test accuracy: 0.9394  Best: 0.9472  Save: False
+Epoch 62 done. Test accuracy: 0.9428  Best: 0.9472  Save: False
+Epoch 63 done. Test accuracy: 0.9406  Best: 0.9472  Save: False
+Epoch 64 done. Test accuracy: 0.9372  Best: 0.9472  Save: False
+Epoch 65 done. Test accuracy: 0.9378  Best: 0.9472  Save: False
+Epoch 66 done. Test accuracy: 0.9400  Best: 0.9472  Save: False
+Epoch 67 done. Test accuracy: 0.9400  Best: 0.9472  Save: False
+Epoch 68 done. Test accuracy: 0.9433  Best: 0.9472  Save: False
+Epoch 69 done. Test accuracy: 0.9422  Best: 0.9472  Save: False
+Epoch 70 done. Test accuracy: 0.9422  Best: 0.9472  Save: False
+Epoch 71 done. Test accuracy: 0.9433  Best: 0.9472  Save: False
+Epoch 72 done. Test accuracy: 0.9433  Best: 0.9472  Save: False
+Epoch 73 done. Test accuracy: 0.9394  Best: 0.9472  Save: False
+Epoch 74 done. Test accuracy: 0.9400  Best: 0.9472  Save: False
+Epoch 75 done. Test accuracy: 0.9411  Best: 0.9472  Save: False
+Epoch 76 done. Test accuracy: 0.9394  Best: 0.9472  Save: False
+Epoch 77 done. Test accuracy: 0.9422  Best: 0.9472  Save: False
+Epoch 78 done. Test accuracy: 0.9356  Best: 0.9472  Save: False
+Epoch 79 done. Test accuracy: 0.9417  Best: 0.9472  Save: False
+
+
+Repetition 0 completed in 238 secs
+ Best accuracy for 7 target sample per class and repetition 0 is 0.9472.
+  Average acc: 0.9421 (±0.00)
