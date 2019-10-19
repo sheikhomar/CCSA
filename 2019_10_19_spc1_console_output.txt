@@ -1,0 +1,1074 @@
+Using TensorFlow backend.
+
+Start time: 2019-10-19 14:26
+Domain Adaptation Task: MNIST_to_USPS
+Creating pairs for repetition: 0 and sample_per_class: 1
+
+Loading training data from ./row_data/MNIST_to_USPS_XY_repetition_0_sample_per_class_1.npy
+  Target Features, shape (10, 16, 16)
+  Target Labels, shape (10,)
+  Source Features, shape (2000, 16, 16)
+  Source Labels, shape (2000,)
+
+Creating positive and negative pairs
+  Number of positive pairs: 2000
+  Number of negative pairs: 18000
+
+Constructing training pairs
+  Using 2000 positive pairs
+  Using 6000 negative pairs
+  Total number of training pairs: 8000
+
+Creating and storing training examples on disk
+
+
+Training the model - epochs=80  batch_size=256  n_steps=32  n_train_samples=8000
+Test data loaded: target feature shape=(1800, 16, 16, 1)  label shape=(1800, 10)
+Epoch  0 done. Test accuracy: 0.7600  Best: 0.0000  Save: True
+Epoch  1 done. Test accuracy: 0.8172  Best: 0.7600  Save: True
+Epoch  2 done. Test accuracy: 0.8344  Best: 0.8172  Save: True
+Epoch  3 done. Test accuracy: 0.8411  Best: 0.8344  Save: True
+Epoch  4 done. Test accuracy: 0.8578  Best: 0.8411  Save: True
+Epoch  5 done. Test accuracy: 0.8567  Best: 0.8578  Save: False
+Epoch  6 done. Test accuracy: 0.8561  Best: 0.8578  Save: False
+Epoch  7 done. Test accuracy: 0.8644  Best: 0.8578  Save: True
+Epoch  8 done. Test accuracy: 0.8606  Best: 0.8644  Save: False
+Epoch  9 done. Test accuracy: 0.8694  Best: 0.8644  Save: True
+Epoch 10 done. Test accuracy: 0.8672  Best: 0.8694  Save: False
+Epoch 11 done. Test accuracy: 0.8683  Best: 0.8694  Save: False
+Epoch 12 done. Test accuracy: 0.8572  Best: 0.8694  Save: False
+Epoch 13 done. Test accuracy: 0.8711  Best: 0.8694  Save: True
+Epoch 14 done. Test accuracy: 0.8711  Best: 0.8711  Save: False
+Epoch 15 done. Test accuracy: 0.8661  Best: 0.8711  Save: False
+Epoch 16 done. Test accuracy: 0.8683  Best: 0.8711  Save: False
+Epoch 17 done. Test accuracy: 0.8683  Best: 0.8711  Save: False
+Epoch 18 done. Test accuracy: 0.8689  Best: 0.8711  Save: False
+Epoch 19 done. Test accuracy: 0.8756  Best: 0.8711  Save: True
+Epoch 20 done. Test accuracy: 0.8650  Best: 0.8756  Save: False
+Epoch 21 done. Test accuracy: 0.8672  Best: 0.8756  Save: False
+Epoch 22 done. Test accuracy: 0.8700  Best: 0.8756  Save: False
+Epoch 23 done. Test accuracy: 0.8711  Best: 0.8756  Save: False
+Epoch 24 done. Test accuracy: 0.8694  Best: 0.8756  Save: False
+Epoch 25 done. Test accuracy: 0.8667  Best: 0.8756  Save: False
+Epoch 26 done. Test accuracy: 0.8733  Best: 0.8756  Save: False
+Epoch 27 done. Test accuracy: 0.8667  Best: 0.8756  Save: False
+Epoch 28 done. Test accuracy: 0.8722  Best: 0.8756  Save: False
+Epoch 29 done. Test accuracy: 0.8700  Best: 0.8756  Save: False
+Epoch 30 done. Test accuracy: 0.8650  Best: 0.8756  Save: False
+Epoch 31 done. Test accuracy: 0.8678  Best: 0.8756  Save: False
+Epoch 32 done. Test accuracy: 0.8661  Best: 0.8756  Save: False
+Epoch 33 done. Test accuracy: 0.8700  Best: 0.8756  Save: False
+Epoch 34 done. Test accuracy: 0.8728  Best: 0.8756  Save: False
+Epoch 35 done. Test accuracy: 0.8611  Best: 0.8756  Save: False
+Epoch 36 done. Test accuracy: 0.8733  Best: 0.8756  Save: False
+Epoch 37 done. Test accuracy: 0.8733  Best: 0.8756  Save: False
+Epoch 38 done. Test accuracy: 0.8689  Best: 0.8756  Save: False
+Epoch 39 done. Test accuracy: 0.8728  Best: 0.8756  Save: False
+Epoch 40 done. Test accuracy: 0.8672  Best: 0.8756  Save: False
+Epoch 41 done. Test accuracy: 0.8733  Best: 0.8756  Save: False
+Epoch 42 done. Test accuracy: 0.8683  Best: 0.8756  Save: False
+Epoch 43 done. Test accuracy: 0.8711  Best: 0.8756  Save: False
+Epoch 44 done. Test accuracy: 0.8722  Best: 0.8756  Save: False
+Epoch 45 done. Test accuracy: 0.8728  Best: 0.8756  Save: False
+Epoch 46 done. Test accuracy: 0.8744  Best: 0.8756  Save: False
+Epoch 47 done. Test accuracy: 0.8667  Best: 0.8756  Save: False
+Epoch 48 done. Test accuracy: 0.8744  Best: 0.8756  Save: False
+Epoch 49 done. Test accuracy: 0.8694  Best: 0.8756  Save: False
+Epoch 50 done. Test accuracy: 0.8711  Best: 0.8756  Save: False
+Epoch 51 done. Test accuracy: 0.8739  Best: 0.8756  Save: False
+Epoch 52 done. Test accuracy: 0.8706  Best: 0.8756  Save: False
+Epoch 53 done. Test accuracy: 0.8711  Best: 0.8756  Save: False
+Epoch 54 done. Test accuracy: 0.8706  Best: 0.8756  Save: False
+Epoch 55 done. Test accuracy: 0.8733  Best: 0.8756  Save: False
+Epoch 56 done. Test accuracy: 0.8717  Best: 0.8756  Save: False
+Epoch 57 done. Test accuracy: 0.8722  Best: 0.8756  Save: False
+Epoch 58 done. Test accuracy: 0.8722  Best: 0.8756  Save: False
+Epoch 59 done. Test accuracy: 0.8706  Best: 0.8756  Save: False
+Epoch 60 done. Test accuracy: 0.8672  Best: 0.8756  Save: False
+Epoch 61 done. Test accuracy: 0.8717  Best: 0.8756  Save: False
+Epoch 62 done. Test accuracy: 0.8694  Best: 0.8756  Save: False
+Epoch 63 done. Test accuracy: 0.8717  Best: 0.8756  Save: False
+Epoch 64 done. Test accuracy: 0.8728  Best: 0.8756  Save: False
+Epoch 65 done. Test accuracy: 0.8706  Best: 0.8756  Save: False
+Epoch 66 done. Test accuracy: 0.8728  Best: 0.8756  Save: False
+Epoch 67 done. Test accuracy: 0.8683  Best: 0.8756  Save: False
+Epoch 68 done. Test accuracy: 0.8706  Best: 0.8756  Save: False
+Epoch 69 done. Test accuracy: 0.8711  Best: 0.8756  Save: False
+Epoch 70 done. Test accuracy: 0.8650  Best: 0.8756  Save: False
+Epoch 71 done. Test accuracy: 0.8700  Best: 0.8756  Save: False
+Epoch 72 done. Test accuracy: 0.8739  Best: 0.8756  Save: False
+Epoch 73 done. Test accuracy: 0.8711  Best: 0.8756  Save: False
+Epoch 74 done. Test accuracy: 0.8728  Best: 0.8756  Save: False
+Epoch 75 done. Test accuracy: 0.8739  Best: 0.8756  Save: False
+Epoch 76 done. Test accuracy: 0.8717  Best: 0.8756  Save: False
+Epoch 77 done. Test accuracy: 0.8694  Best: 0.8756  Save: False
+Epoch 78 done. Test accuracy: 0.8733  Best: 0.8756  Save: False
+Epoch 79 done. Test accuracy: 0.8644  Best: 0.8756  Save: False
+
+
+Repetition 0 completed in 40 secs
+ Best accuracy for 1 target sample per class and repetition 0 is 0.8756.
+  Average acc: 0.8665 (±0.01)
+Creating pairs for repetition: 1 and sample_per_class: 1
+
+Loading training data from ./row_data/MNIST_to_USPS_XY_repetition_1_sample_per_class_1.npy
+  Target Features, shape (10, 16, 16)
+  Target Labels, shape (10,)
+  Source Features, shape (2000, 16, 16)
+  Source Labels, shape (2000,)
+
+Creating positive and negative pairs
+  Number of positive pairs: 2000
+  Number of negative pairs: 18000
+
+Constructing training pairs
+  Using 2000 positive pairs
+  Using 6000 negative pairs
+  Total number of training pairs: 8000
+
+Creating and storing training examples on disk
+
+
+Training the model - epochs=80  batch_size=256  n_steps=32  n_train_samples=8000
+Test data loaded: target feature shape=(1800, 16, 16, 1)  label shape=(1800, 10)
+Epoch  0 done. Test accuracy: 0.8678  Best: 0.0000  Save: True
+Epoch  1 done. Test accuracy: 0.8683  Best: 0.8678  Save: True
+Epoch  2 done. Test accuracy: 0.8750  Best: 0.8683  Save: True
+Epoch  3 done. Test accuracy: 0.8756  Best: 0.8750  Save: True
+Epoch  4 done. Test accuracy: 0.8789  Best: 0.8756  Save: True
+Epoch  5 done. Test accuracy: 0.8683  Best: 0.8789  Save: False
+Epoch  6 done. Test accuracy: 0.8767  Best: 0.8789  Save: False
+Epoch  7 done. Test accuracy: 0.8728  Best: 0.8789  Save: False
+Epoch  8 done. Test accuracy: 0.8700  Best: 0.8789  Save: False
+Epoch  9 done. Test accuracy: 0.8750  Best: 0.8789  Save: False
+Epoch 10 done. Test accuracy: 0.8756  Best: 0.8789  Save: False
+Epoch 11 done. Test accuracy: 0.8783  Best: 0.8789  Save: False
+Epoch 12 done. Test accuracy: 0.8856  Best: 0.8789  Save: True
+Epoch 13 done. Test accuracy: 0.8861  Best: 0.8856  Save: True
+Epoch 14 done. Test accuracy: 0.8839  Best: 0.8861  Save: False
+Epoch 15 done. Test accuracy: 0.8828  Best: 0.8861  Save: False
+Epoch 16 done. Test accuracy: 0.8717  Best: 0.8861  Save: False
+Epoch 17 done. Test accuracy: 0.8761  Best: 0.8861  Save: False
+Epoch 18 done. Test accuracy: 0.8828  Best: 0.8861  Save: False
+Epoch 19 done. Test accuracy: 0.8756  Best: 0.8861  Save: False
+Epoch 20 done. Test accuracy: 0.8750  Best: 0.8861  Save: False
+Epoch 21 done. Test accuracy: 0.8794  Best: 0.8861  Save: False
+Epoch 22 done. Test accuracy: 0.8872  Best: 0.8861  Save: True
+Epoch 23 done. Test accuracy: 0.8811  Best: 0.8872  Save: False
+Epoch 24 done. Test accuracy: 0.8778  Best: 0.8872  Save: False
+Epoch 25 done. Test accuracy: 0.8789  Best: 0.8872  Save: False
+Epoch 26 done. Test accuracy: 0.8750  Best: 0.8872  Save: False
+Epoch 27 done. Test accuracy: 0.8844  Best: 0.8872  Save: False
+Epoch 28 done. Test accuracy: 0.8817  Best: 0.8872  Save: False
+Epoch 29 done. Test accuracy: 0.8817  Best: 0.8872  Save: False
+Epoch 30 done. Test accuracy: 0.8822  Best: 0.8872  Save: False
+Epoch 31 done. Test accuracy: 0.8817  Best: 0.8872  Save: False
+Epoch 32 done. Test accuracy: 0.8833  Best: 0.8872  Save: False
+Epoch 33 done. Test accuracy: 0.8850  Best: 0.8872  Save: False
+Epoch 34 done. Test accuracy: 0.8733  Best: 0.8872  Save: False
+Epoch 35 done. Test accuracy: 0.8806  Best: 0.8872  Save: False
+Epoch 36 done. Test accuracy: 0.8778  Best: 0.8872  Save: False
+Epoch 37 done. Test accuracy: 0.8850  Best: 0.8872  Save: False
+Epoch 38 done. Test accuracy: 0.8783  Best: 0.8872  Save: False
+Epoch 39 done. Test accuracy: 0.8800  Best: 0.8872  Save: False
+Epoch 40 done. Test accuracy: 0.8744  Best: 0.8872  Save: False
+Epoch 41 done. Test accuracy: 0.8811  Best: 0.8872  Save: False
+Epoch 42 done. Test accuracy: 0.8767  Best: 0.8872  Save: False
+Epoch 43 done. Test accuracy: 0.8856  Best: 0.8872  Save: False
+Epoch 44 done. Test accuracy: 0.8783  Best: 0.8872  Save: False
+Epoch 45 done. Test accuracy: 0.8794  Best: 0.8872  Save: False
+Epoch 46 done. Test accuracy: 0.8828  Best: 0.8872  Save: False
+Epoch 47 done. Test accuracy: 0.8844  Best: 0.8872  Save: False
+Epoch 48 done. Test accuracy: 0.8817  Best: 0.8872  Save: False
+Epoch 49 done. Test accuracy: 0.8828  Best: 0.8872  Save: False
+Epoch 50 done. Test accuracy: 0.8806  Best: 0.8872  Save: False
+Epoch 51 done. Test accuracy: 0.8789  Best: 0.8872  Save: False
+Epoch 52 done. Test accuracy: 0.8828  Best: 0.8872  Save: False
+Epoch 53 done. Test accuracy: 0.8844  Best: 0.8872  Save: False
+Epoch 54 done. Test accuracy: 0.8794  Best: 0.8872  Save: False
+Epoch 55 done. Test accuracy: 0.8822  Best: 0.8872  Save: False
+Epoch 56 done. Test accuracy: 0.8772  Best: 0.8872  Save: False
+Epoch 57 done. Test accuracy: 0.8767  Best: 0.8872  Save: False
+Epoch 58 done. Test accuracy: 0.8833  Best: 0.8872  Save: False
+Epoch 59 done. Test accuracy: 0.8817  Best: 0.8872  Save: False
+Epoch 60 done. Test accuracy: 0.8833  Best: 0.8872  Save: False
+Epoch 61 done. Test accuracy: 0.8872  Best: 0.8872  Save: False
+Epoch 62 done. Test accuracy: 0.8772  Best: 0.8872  Save: False
+Epoch 63 done. Test accuracy: 0.8844  Best: 0.8872  Save: False
+Epoch 64 done. Test accuracy: 0.8833  Best: 0.8872  Save: False
+Epoch 65 done. Test accuracy: 0.8822  Best: 0.8872  Save: False
+Epoch 66 done. Test accuracy: 0.8833  Best: 0.8872  Save: False
+Epoch 67 done. Test accuracy: 0.8778  Best: 0.8872  Save: False
+Epoch 68 done. Test accuracy: 0.8772  Best: 0.8872  Save: False
+Epoch 69 done. Test accuracy: 0.8811  Best: 0.8872  Save: False
+Epoch 70 done. Test accuracy: 0.8733  Best: 0.8872  Save: False
+Epoch 71 done. Test accuracy: 0.8778  Best: 0.8872  Save: False
+Epoch 72 done. Test accuracy: 0.8806  Best: 0.8872  Save: False
+Epoch 73 done. Test accuracy: 0.8867  Best: 0.8872  Save: False
+Epoch 74 done. Test accuracy: 0.8822  Best: 0.8872  Save: False
+Epoch 75 done. Test accuracy: 0.8844  Best: 0.8872  Save: False
+Epoch 76 done. Test accuracy: 0.8722  Best: 0.8872  Save: False
+Epoch 77 done. Test accuracy: 0.8767  Best: 0.8872  Save: False
+Epoch 78 done. Test accuracy: 0.8800  Best: 0.8872  Save: False
+Epoch 79 done. Test accuracy: 0.8817  Best: 0.8872  Save: False
+
+
+Repetition 1 completed in 38 secs
+ Best accuracy for 1 target sample per class and repetition 1 is 0.8872.
+  Average acc: 0.8795 (±0.00)
+Creating pairs for repetition: 2 and sample_per_class: 1
+
+Loading training data from ./row_data/MNIST_to_USPS_XY_repetition_2_sample_per_class_1.npy
+  Target Features, shape (10, 16, 16)
+  Target Labels, shape (10,)
+  Source Features, shape (2000, 16, 16)
+  Source Labels, shape (2000,)
+
+Creating positive and negative pairs
+  Number of positive pairs: 2000
+  Number of negative pairs: 18000
+
+Constructing training pairs
+  Using 2000 positive pairs
+  Using 6000 negative pairs
+  Total number of training pairs: 8000
+
+Creating and storing training examples on disk
+
+
+Training the model - epochs=80  batch_size=256  n_steps=32  n_train_samples=8000
+Test data loaded: target feature shape=(1800, 16, 16, 1)  label shape=(1800, 10)
+Epoch  0 done. Test accuracy: 0.9200  Best: 0.0000  Save: True
+Epoch  1 done. Test accuracy: 0.9144  Best: 0.9200  Save: False
+Epoch  2 done. Test accuracy: 0.9222  Best: 0.9200  Save: True
+Epoch  3 done. Test accuracy: 0.9194  Best: 0.9222  Save: False
+Epoch  4 done. Test accuracy: 0.9256  Best: 0.9222  Save: True
+Epoch  5 done. Test accuracy: 0.9222  Best: 0.9256  Save: False
+Epoch  6 done. Test accuracy: 0.9228  Best: 0.9256  Save: False
+Epoch  7 done. Test accuracy: 0.9228  Best: 0.9256  Save: False
+Epoch  8 done. Test accuracy: 0.9250  Best: 0.9256  Save: False
+Epoch  9 done. Test accuracy: 0.9256  Best: 0.9256  Save: False
+Epoch 10 done. Test accuracy: 0.9261  Best: 0.9256  Save: True
+Epoch 11 done. Test accuracy: 0.9289  Best: 0.9261  Save: True
+Epoch 12 done. Test accuracy: 0.9256  Best: 0.9289  Save: False
+Epoch 13 done. Test accuracy: 0.9294  Best: 0.9289  Save: True
+Epoch 14 done. Test accuracy: 0.9256  Best: 0.9294  Save: False
+Epoch 15 done. Test accuracy: 0.9306  Best: 0.9294  Save: True
+Epoch 16 done. Test accuracy: 0.9272  Best: 0.9306  Save: False
+Epoch 17 done. Test accuracy: 0.9328  Best: 0.9306  Save: True
+Epoch 18 done. Test accuracy: 0.9261  Best: 0.9328  Save: False
+Epoch 19 done. Test accuracy: 0.9300  Best: 0.9328  Save: False
+Epoch 20 done. Test accuracy: 0.9267  Best: 0.9328  Save: False
+Epoch 21 done. Test accuracy: 0.9289  Best: 0.9328  Save: False
+Epoch 22 done. Test accuracy: 0.9267  Best: 0.9328  Save: False
+Epoch 23 done. Test accuracy: 0.9267  Best: 0.9328  Save: False
+Epoch 24 done. Test accuracy: 0.9267  Best: 0.9328  Save: False
+Epoch 25 done. Test accuracy: 0.9206  Best: 0.9328  Save: False
+Epoch 26 done. Test accuracy: 0.9317  Best: 0.9328  Save: False
+Epoch 27 done. Test accuracy: 0.9267  Best: 0.9328  Save: False
+Epoch 28 done. Test accuracy: 0.9289  Best: 0.9328  Save: False
+Epoch 29 done. Test accuracy: 0.9272  Best: 0.9328  Save: False
+Epoch 30 done. Test accuracy: 0.9267  Best: 0.9328  Save: False
+Epoch 31 done. Test accuracy: 0.9278  Best: 0.9328  Save: False
+Epoch 32 done. Test accuracy: 0.9278  Best: 0.9328  Save: False
+Epoch 33 done. Test accuracy: 0.9283  Best: 0.9328  Save: False
+Epoch 34 done. Test accuracy: 0.9300  Best: 0.9328  Save: False
+Epoch 35 done. Test accuracy: 0.9294  Best: 0.9328  Save: False
+Epoch 36 done. Test accuracy: 0.9294  Best: 0.9328  Save: False
+Epoch 37 done. Test accuracy: 0.9289  Best: 0.9328  Save: False
+Epoch 38 done. Test accuracy: 0.9306  Best: 0.9328  Save: False
+Epoch 39 done. Test accuracy: 0.9267  Best: 0.9328  Save: False
+Epoch 40 done. Test accuracy: 0.9289  Best: 0.9328  Save: False
+Epoch 41 done. Test accuracy: 0.9300  Best: 0.9328  Save: False
+Epoch 42 done. Test accuracy: 0.9267  Best: 0.9328  Save: False
+Epoch 43 done. Test accuracy: 0.9306  Best: 0.9328  Save: False
+Epoch 44 done. Test accuracy: 0.9289  Best: 0.9328  Save: False
+Epoch 45 done. Test accuracy: 0.9283  Best: 0.9328  Save: False
+Epoch 46 done. Test accuracy: 0.9278  Best: 0.9328  Save: False
+Epoch 47 done. Test accuracy: 0.9267  Best: 0.9328  Save: False
+Epoch 48 done. Test accuracy: 0.9261  Best: 0.9328  Save: False
+Epoch 49 done. Test accuracy: 0.9228  Best: 0.9328  Save: False
+Epoch 50 done. Test accuracy: 0.9256  Best: 0.9328  Save: False
+Epoch 51 done. Test accuracy: 0.9267  Best: 0.9328  Save: False
+Epoch 52 done. Test accuracy: 0.9267  Best: 0.9328  Save: False
+Epoch 53 done. Test accuracy: 0.9289  Best: 0.9328  Save: False
+Epoch 54 done. Test accuracy: 0.9283  Best: 0.9328  Save: False
+Epoch 55 done. Test accuracy: 0.9278  Best: 0.9328  Save: False
+Epoch 56 done. Test accuracy: 0.9278  Best: 0.9328  Save: False
+Epoch 57 done. Test accuracy: 0.9261  Best: 0.9328  Save: False
+Epoch 58 done. Test accuracy: 0.9317  Best: 0.9328  Save: False
+Epoch 59 done. Test accuracy: 0.9267  Best: 0.9328  Save: False
+Epoch 60 done. Test accuracy: 0.9317  Best: 0.9328  Save: False
+Epoch 61 done. Test accuracy: 0.9228  Best: 0.9328  Save: False
+Epoch 62 done. Test accuracy: 0.9267  Best: 0.9328  Save: False
+Epoch 63 done. Test accuracy: 0.9278  Best: 0.9328  Save: False
+Epoch 64 done. Test accuracy: 0.9250  Best: 0.9328  Save: False
+Epoch 65 done. Test accuracy: 0.9272  Best: 0.9328  Save: False
+Epoch 66 done. Test accuracy: 0.9289  Best: 0.9328  Save: False
+Epoch 67 done. Test accuracy: 0.9278  Best: 0.9328  Save: False
+Epoch 68 done. Test accuracy: 0.9267  Best: 0.9328  Save: False
+Epoch 69 done. Test accuracy: 0.9250  Best: 0.9328  Save: False
+Epoch 70 done. Test accuracy: 0.9261  Best: 0.9328  Save: False
+Epoch 71 done. Test accuracy: 0.9272  Best: 0.9328  Save: False
+Epoch 72 done. Test accuracy: 0.9294  Best: 0.9328  Save: False
+Epoch 73 done. Test accuracy: 0.9283  Best: 0.9328  Save: False
+Epoch 74 done. Test accuracy: 0.9272  Best: 0.9328  Save: False
+Epoch 75 done. Test accuracy: 0.9228  Best: 0.9328  Save: False
+Epoch 76 done. Test accuracy: 0.9283  Best: 0.9328  Save: False
+Epoch 77 done. Test accuracy: 0.9250  Best: 0.9328  Save: False
+Epoch 78 done. Test accuracy: 0.9300  Best: 0.9328  Save: False
+Epoch 79 done. Test accuracy: 0.9294  Best: 0.9328  Save: False
+
+
+Repetition 2 completed in 38 secs
+ Best accuracy for 1 target sample per class and repetition 2 is 0.9328.
+  Average acc: 0.9269 (±0.00)
+Creating pairs for repetition: 3 and sample_per_class: 1
+
+Loading training data from ./row_data/MNIST_to_USPS_XY_repetition_3_sample_per_class_1.npy
+  Target Features, shape (10, 16, 16)
+  Target Labels, shape (10,)
+  Source Features, shape (2000, 16, 16)
+  Source Labels, shape (2000,)
+
+Creating positive and negative pairs
+  Number of positive pairs: 2000
+  Number of negative pairs: 18000
+
+Constructing training pairs
+  Using 2000 positive pairs
+  Using 6000 negative pairs
+  Total number of training pairs: 8000
+
+Creating and storing training examples on disk
+
+
+Training the model - epochs=80  batch_size=256  n_steps=32  n_train_samples=8000
+Test data loaded: target feature shape=(1800, 16, 16, 1)  label shape=(1800, 10)
+Epoch  0 done. Test accuracy: 0.9278  Best: 0.0000  Save: True
+Epoch  1 done. Test accuracy: 0.9289  Best: 0.9278  Save: True
+Epoch  2 done. Test accuracy: 0.9322  Best: 0.9289  Save: True
+Epoch  3 done. Test accuracy: 0.9306  Best: 0.9322  Save: False
+Epoch  4 done. Test accuracy: 0.9317  Best: 0.9322  Save: False
+Epoch  5 done. Test accuracy: 0.9322  Best: 0.9322  Save: False
+Epoch  6 done. Test accuracy: 0.9333  Best: 0.9322  Save: True
+Epoch  7 done. Test accuracy: 0.9311  Best: 0.9333  Save: False
+Epoch  8 done. Test accuracy: 0.9333  Best: 0.9333  Save: False
+Epoch  9 done. Test accuracy: 0.9306  Best: 0.9333  Save: False
+Epoch 10 done. Test accuracy: 0.9322  Best: 0.9333  Save: False
+Epoch 11 done. Test accuracy: 0.9333  Best: 0.9333  Save: False
+Epoch 12 done. Test accuracy: 0.9317  Best: 0.9333  Save: False
+Epoch 13 done. Test accuracy: 0.9317  Best: 0.9333  Save: False
+Epoch 14 done. Test accuracy: 0.9283  Best: 0.9333  Save: False
+Epoch 15 done. Test accuracy: 0.9328  Best: 0.9333  Save: False
+Epoch 16 done. Test accuracy: 0.9306  Best: 0.9333  Save: False
+Epoch 17 done. Test accuracy: 0.9278  Best: 0.9333  Save: False
+Epoch 18 done. Test accuracy: 0.9294  Best: 0.9333  Save: False
+Epoch 19 done. Test accuracy: 0.9306  Best: 0.9333  Save: False
+Epoch 20 done. Test accuracy: 0.9256  Best: 0.9333  Save: False
+Epoch 21 done. Test accuracy: 0.9267  Best: 0.9333  Save: False
+Epoch 22 done. Test accuracy: 0.9289  Best: 0.9333  Save: False
+Epoch 23 done. Test accuracy: 0.9300  Best: 0.9333  Save: False
+Epoch 24 done. Test accuracy: 0.9283  Best: 0.9333  Save: False
+Epoch 25 done. Test accuracy: 0.9306  Best: 0.9333  Save: False
+Epoch 26 done. Test accuracy: 0.9283  Best: 0.9333  Save: False
+Epoch 27 done. Test accuracy: 0.9289  Best: 0.9333  Save: False
+Epoch 28 done. Test accuracy: 0.9300  Best: 0.9333  Save: False
+Epoch 29 done. Test accuracy: 0.9283  Best: 0.9333  Save: False
+Epoch 30 done. Test accuracy: 0.9289  Best: 0.9333  Save: False
+Epoch 31 done. Test accuracy: 0.9300  Best: 0.9333  Save: False
+Epoch 32 done. Test accuracy: 0.9283  Best: 0.9333  Save: False
+Epoch 33 done. Test accuracy: 0.9289  Best: 0.9333  Save: False
+Epoch 34 done. Test accuracy: 0.9289  Best: 0.9333  Save: False
+Epoch 35 done. Test accuracy: 0.9278  Best: 0.9333  Save: False
+Epoch 36 done. Test accuracy: 0.9294  Best: 0.9333  Save: False
+Epoch 37 done. Test accuracy: 0.9267  Best: 0.9333  Save: False
+Epoch 38 done. Test accuracy: 0.9283  Best: 0.9333  Save: False
+Epoch 39 done. Test accuracy: 0.9267  Best: 0.9333  Save: False
+Epoch 40 done. Test accuracy: 0.9272  Best: 0.9333  Save: False
+Epoch 41 done. Test accuracy: 0.9294  Best: 0.9333  Save: False
+Epoch 42 done. Test accuracy: 0.9317  Best: 0.9333  Save: False
+Epoch 43 done. Test accuracy: 0.9256  Best: 0.9333  Save: False
+Epoch 44 done. Test accuracy: 0.9278  Best: 0.9333  Save: False
+Epoch 45 done. Test accuracy: 0.9278  Best: 0.9333  Save: False
+Epoch 46 done. Test accuracy: 0.9272  Best: 0.9333  Save: False
+Epoch 47 done. Test accuracy: 0.9294  Best: 0.9333  Save: False
+Epoch 48 done. Test accuracy: 0.9272  Best: 0.9333  Save: False
+Epoch 49 done. Test accuracy: 0.9339  Best: 0.9333  Save: True
+Epoch 50 done. Test accuracy: 0.9300  Best: 0.9339  Save: False
+Epoch 51 done. Test accuracy: 0.9300  Best: 0.9339  Save: False
+Epoch 52 done. Test accuracy: 0.9300  Best: 0.9339  Save: False
+Epoch 53 done. Test accuracy: 0.9272  Best: 0.9339  Save: False
+Epoch 54 done. Test accuracy: 0.9256  Best: 0.9339  Save: False
+Epoch 55 done. Test accuracy: 0.9283  Best: 0.9339  Save: False
+Epoch 56 done. Test accuracy: 0.9261  Best: 0.9339  Save: False
+Epoch 57 done. Test accuracy: 0.9250  Best: 0.9339  Save: False
+Epoch 58 done. Test accuracy: 0.9244  Best: 0.9339  Save: False
+Epoch 59 done. Test accuracy: 0.9272  Best: 0.9339  Save: False
+Epoch 60 done. Test accuracy: 0.9289  Best: 0.9339  Save: False
+Epoch 61 done. Test accuracy: 0.9289  Best: 0.9339  Save: False
+Epoch 62 done. Test accuracy: 0.9250  Best: 0.9339  Save: False
+Epoch 63 done. Test accuracy: 0.9256  Best: 0.9339  Save: False
+Epoch 64 done. Test accuracy: 0.9261  Best: 0.9339  Save: False
+Epoch 65 done. Test accuracy: 0.9306  Best: 0.9339  Save: False
+Epoch 66 done. Test accuracy: 0.9300  Best: 0.9339  Save: False
+Epoch 67 done. Test accuracy: 0.9300  Best: 0.9339  Save: False
+Epoch 68 done. Test accuracy: 0.9300  Best: 0.9339  Save: False
+Epoch 69 done. Test accuracy: 0.9294  Best: 0.9339  Save: False
+Epoch 70 done. Test accuracy: 0.9311  Best: 0.9339  Save: False
+Epoch 71 done. Test accuracy: 0.9289  Best: 0.9339  Save: False
+Epoch 72 done. Test accuracy: 0.9283  Best: 0.9339  Save: False
+Epoch 73 done. Test accuracy: 0.9278  Best: 0.9339  Save: False
+Epoch 74 done. Test accuracy: 0.9267  Best: 0.9339  Save: False
+Epoch 75 done. Test accuracy: 0.9311  Best: 0.9339  Save: False
+Epoch 76 done. Test accuracy: 0.9306  Best: 0.9339  Save: False
+Epoch 77 done. Test accuracy: 0.9256  Best: 0.9339  Save: False
+Epoch 78 done. Test accuracy: 0.9317  Best: 0.9339  Save: False
+Epoch 79 done. Test accuracy: 0.9272  Best: 0.9339  Save: False
+
+
+Repetition 3 completed in 37 secs
+ Best accuracy for 1 target sample per class and repetition 3 is 0.9339.
+  Average acc: 0.9290 (±0.00)
+Creating pairs for repetition: 4 and sample_per_class: 1
+
+Loading training data from ./row_data/MNIST_to_USPS_XY_repetition_4_sample_per_class_1.npy
+  Target Features, shape (10, 16, 16)
+  Target Labels, shape (10,)
+  Source Features, shape (2000, 16, 16)
+  Source Labels, shape (2000,)
+
+Creating positive and negative pairs
+  Number of positive pairs: 2000
+  Number of negative pairs: 18000
+
+Constructing training pairs
+  Using 2000 positive pairs
+  Using 6000 negative pairs
+  Total number of training pairs: 8000
+
+Creating and storing training examples on disk
+
+
+Training the model - epochs=80  batch_size=256  n_steps=32  n_train_samples=8000
+Test data loaded: target feature shape=(1800, 16, 16, 1)  label shape=(1800, 10)
+Epoch  0 done. Test accuracy: 0.9278  Best: 0.0000  Save: True
+Epoch  1 done. Test accuracy: 0.9244  Best: 0.9278  Save: False
+Epoch  2 done. Test accuracy: 0.9267  Best: 0.9278  Save: False
+Epoch  3 done. Test accuracy: 0.9278  Best: 0.9278  Save: False
+Epoch  4 done. Test accuracy: 0.9283  Best: 0.9278  Save: True
+Epoch  5 done. Test accuracy: 0.9278  Best: 0.9283  Save: False
+Epoch  6 done. Test accuracy: 0.9244  Best: 0.9283  Save: False
+Epoch  7 done. Test accuracy: 0.9267  Best: 0.9283  Save: False
+Epoch  8 done. Test accuracy: 0.9278  Best: 0.9283  Save: False
+Epoch  9 done. Test accuracy: 0.9267  Best: 0.9283  Save: False
+Epoch 10 done. Test accuracy: 0.9272  Best: 0.9283  Save: False
+Epoch 11 done. Test accuracy: 0.9278  Best: 0.9283  Save: False
+Epoch 12 done. Test accuracy: 0.9250  Best: 0.9283  Save: False
+Epoch 13 done. Test accuracy: 0.9256  Best: 0.9283  Save: False
+Epoch 14 done. Test accuracy: 0.9244  Best: 0.9283  Save: False
+Epoch 15 done. Test accuracy: 0.9244  Best: 0.9283  Save: False
+Epoch 16 done. Test accuracy: 0.9278  Best: 0.9283  Save: False
+Epoch 17 done. Test accuracy: 0.9244  Best: 0.9283  Save: False
+Epoch 18 done. Test accuracy: 0.9283  Best: 0.9283  Save: False
+Epoch 19 done. Test accuracy: 0.9267  Best: 0.9283  Save: False
+Epoch 20 done. Test accuracy: 0.9256  Best: 0.9283  Save: False
+Epoch 21 done. Test accuracy: 0.9256  Best: 0.9283  Save: False
+Epoch 22 done. Test accuracy: 0.9250  Best: 0.9283  Save: False
+Epoch 23 done. Test accuracy: 0.9239  Best: 0.9283  Save: False
+Epoch 24 done. Test accuracy: 0.9289  Best: 0.9283  Save: True
+Epoch 25 done. Test accuracy: 0.9272  Best: 0.9289  Save: False
+Epoch 26 done. Test accuracy: 0.9256  Best: 0.9289  Save: False
+Epoch 27 done. Test accuracy: 0.9244  Best: 0.9289  Save: False
+Epoch 28 done. Test accuracy: 0.9228  Best: 0.9289  Save: False
+Epoch 29 done. Test accuracy: 0.9267  Best: 0.9289  Save: False
+Epoch 30 done. Test accuracy: 0.9267  Best: 0.9289  Save: False
+Epoch 31 done. Test accuracy: 0.9267  Best: 0.9289  Save: False
+Epoch 32 done. Test accuracy: 0.9267  Best: 0.9289  Save: False
+Epoch 33 done. Test accuracy: 0.9261  Best: 0.9289  Save: False
+Epoch 34 done. Test accuracy: 0.9233  Best: 0.9289  Save: False
+Epoch 35 done. Test accuracy: 0.9256  Best: 0.9289  Save: False
+Epoch 36 done. Test accuracy: 0.9278  Best: 0.9289  Save: False
+Epoch 37 done. Test accuracy: 0.9289  Best: 0.9289  Save: False
+Epoch 38 done. Test accuracy: 0.9300  Best: 0.9289  Save: True
+Epoch 39 done. Test accuracy: 0.9239  Best: 0.9300  Save: False
+Epoch 40 done. Test accuracy: 0.9278  Best: 0.9300  Save: False
+Epoch 41 done. Test accuracy: 0.9306  Best: 0.9300  Save: True
+Epoch 42 done. Test accuracy: 0.9267  Best: 0.9306  Save: False
+Epoch 43 done. Test accuracy: 0.9283  Best: 0.9306  Save: False
+Epoch 44 done. Test accuracy: 0.9228  Best: 0.9306  Save: False
+Epoch 45 done. Test accuracy: 0.9278  Best: 0.9306  Save: False
+Epoch 46 done. Test accuracy: 0.9272  Best: 0.9306  Save: False
+Epoch 47 done. Test accuracy: 0.9289  Best: 0.9306  Save: False
+Epoch 48 done. Test accuracy: 0.9289  Best: 0.9306  Save: False
+Epoch 49 done. Test accuracy: 0.9289  Best: 0.9306  Save: False
+Epoch 50 done. Test accuracy: 0.9256  Best: 0.9306  Save: False
+Epoch 51 done. Test accuracy: 0.9289  Best: 0.9306  Save: False
+Epoch 52 done. Test accuracy: 0.9289  Best: 0.9306  Save: False
+Epoch 53 done. Test accuracy: 0.9272  Best: 0.9306  Save: False
+Epoch 54 done. Test accuracy: 0.9217  Best: 0.9306  Save: False
+Epoch 55 done. Test accuracy: 0.9250  Best: 0.9306  Save: False
+Epoch 56 done. Test accuracy: 0.9272  Best: 0.9306  Save: False
+Epoch 57 done. Test accuracy: 0.9250  Best: 0.9306  Save: False
+Epoch 58 done. Test accuracy: 0.9267  Best: 0.9306  Save: False
+Epoch 59 done. Test accuracy: 0.9228  Best: 0.9306  Save: False
+Epoch 60 done. Test accuracy: 0.9283  Best: 0.9306  Save: False
+Epoch 61 done. Test accuracy: 0.9300  Best: 0.9306  Save: False
+Epoch 62 done. Test accuracy: 0.9272  Best: 0.9306  Save: False
+Epoch 63 done. Test accuracy: 0.9267  Best: 0.9306  Save: False
+Epoch 64 done. Test accuracy: 0.9261  Best: 0.9306  Save: False
+Epoch 65 done. Test accuracy: 0.9278  Best: 0.9306  Save: False
+Epoch 66 done. Test accuracy: 0.9317  Best: 0.9306  Save: True
+Epoch 67 done. Test accuracy: 0.9267  Best: 0.9317  Save: False
+Epoch 68 done. Test accuracy: 0.9289  Best: 0.9317  Save: False
+Epoch 69 done. Test accuracy: 0.9261  Best: 0.9317  Save: False
+Epoch 70 done. Test accuracy: 0.9272  Best: 0.9317  Save: False
+Epoch 71 done. Test accuracy: 0.9239  Best: 0.9317  Save: False
+Epoch 72 done. Test accuracy: 0.9256  Best: 0.9317  Save: False
+Epoch 73 done. Test accuracy: 0.9244  Best: 0.9317  Save: False
+Epoch 74 done. Test accuracy: 0.9267  Best: 0.9317  Save: False
+Epoch 75 done. Test accuracy: 0.9250  Best: 0.9317  Save: False
+Epoch 76 done. Test accuracy: 0.9250  Best: 0.9317  Save: False
+Epoch 77 done. Test accuracy: 0.9272  Best: 0.9317  Save: False
+Epoch 78 done. Test accuracy: 0.9283  Best: 0.9317  Save: False
+Epoch 79 done. Test accuracy: 0.9200  Best: 0.9317  Save: False
+
+
+Repetition 4 completed in 38 secs
+ Best accuracy for 1 target sample per class and repetition 4 is 0.9317.
+  Average acc: 0.9265 (±0.00)
+Creating pairs for repetition: 5 and sample_per_class: 1
+
+Loading training data from ./row_data/MNIST_to_USPS_XY_repetition_5_sample_per_class_1.npy
+  Target Features, shape (10, 16, 16)
+  Target Labels, shape (10,)
+  Source Features, shape (2000, 16, 16)
+  Source Labels, shape (2000,)
+
+Creating positive and negative pairs
+  Number of positive pairs: 2000
+  Number of negative pairs: 18000
+
+Constructing training pairs
+  Using 2000 positive pairs
+  Using 6000 negative pairs
+  Total number of training pairs: 8000
+
+Creating and storing training examples on disk
+
+
+Training the model - epochs=80  batch_size=256  n_steps=32  n_train_samples=8000
+Test data loaded: target feature shape=(1800, 16, 16, 1)  label shape=(1800, 10)
+Epoch  0 done. Test accuracy: 0.9389  Best: 0.0000  Save: True
+Epoch  1 done. Test accuracy: 0.9428  Best: 0.9389  Save: True
+Epoch  2 done. Test accuracy: 0.9389  Best: 0.9428  Save: False
+Epoch  3 done. Test accuracy: 0.9400  Best: 0.9428  Save: False
+Epoch  4 done. Test accuracy: 0.9439  Best: 0.9428  Save: True
+Epoch  5 done. Test accuracy: 0.9439  Best: 0.9439  Save: False
+Epoch  6 done. Test accuracy: 0.9422  Best: 0.9439  Save: False
+Epoch  7 done. Test accuracy: 0.9450  Best: 0.9439  Save: True
+Epoch  8 done. Test accuracy: 0.9428  Best: 0.9450  Save: False
+Epoch  9 done. Test accuracy: 0.9417  Best: 0.9450  Save: False
+Epoch 10 done. Test accuracy: 0.9422  Best: 0.9450  Save: False
+Epoch 11 done. Test accuracy: 0.9394  Best: 0.9450  Save: False
+Epoch 12 done. Test accuracy: 0.9461  Best: 0.9450  Save: True
+Epoch 13 done. Test accuracy: 0.9439  Best: 0.9461  Save: False
+Epoch 14 done. Test accuracy: 0.9439  Best: 0.9461  Save: False
+Epoch 15 done. Test accuracy: 0.9456  Best: 0.9461  Save: False
+Epoch 16 done. Test accuracy: 0.9433  Best: 0.9461  Save: False
+Epoch 17 done. Test accuracy: 0.9467  Best: 0.9461  Save: True
+Epoch 18 done. Test accuracy: 0.9472  Best: 0.9467  Save: True
+Epoch 19 done. Test accuracy: 0.9472  Best: 0.9472  Save: False
+Epoch 20 done. Test accuracy: 0.9456  Best: 0.9472  Save: False
+Epoch 21 done. Test accuracy: 0.9478  Best: 0.9472  Save: True
+Epoch 22 done. Test accuracy: 0.9444  Best: 0.9478  Save: False
+Epoch 23 done. Test accuracy: 0.9467  Best: 0.9478  Save: False
+Epoch 24 done. Test accuracy: 0.9483  Best: 0.9478  Save: True
+Epoch 25 done. Test accuracy: 0.9461  Best: 0.9483  Save: False
+Epoch 26 done. Test accuracy: 0.9456  Best: 0.9483  Save: False
+Epoch 27 done. Test accuracy: 0.9456  Best: 0.9483  Save: False
+Epoch 28 done. Test accuracy: 0.9439  Best: 0.9483  Save: False
+Epoch 29 done. Test accuracy: 0.9433  Best: 0.9483  Save: False
+Epoch 30 done. Test accuracy: 0.9439  Best: 0.9483  Save: False
+Epoch 31 done. Test accuracy: 0.9461  Best: 0.9483  Save: False
+Epoch 32 done. Test accuracy: 0.9472  Best: 0.9483  Save: False
+Epoch 33 done. Test accuracy: 0.9467  Best: 0.9483  Save: False
+Epoch 34 done. Test accuracy: 0.9461  Best: 0.9483  Save: False
+Epoch 35 done. Test accuracy: 0.9461  Best: 0.9483  Save: False
+Epoch 36 done. Test accuracy: 0.9489  Best: 0.9483  Save: True
+Epoch 37 done. Test accuracy: 0.9422  Best: 0.9489  Save: False
+Epoch 38 done. Test accuracy: 0.9456  Best: 0.9489  Save: False
+Epoch 39 done. Test accuracy: 0.9467  Best: 0.9489  Save: False
+Epoch 40 done. Test accuracy: 0.9450  Best: 0.9489  Save: False
+Epoch 41 done. Test accuracy: 0.9461  Best: 0.9489  Save: False
+Epoch 42 done. Test accuracy: 0.9428  Best: 0.9489  Save: False
+Epoch 43 done. Test accuracy: 0.9461  Best: 0.9489  Save: False
+Epoch 44 done. Test accuracy: 0.9467  Best: 0.9489  Save: False
+Epoch 45 done. Test accuracy: 0.9444  Best: 0.9489  Save: False
+Epoch 46 done. Test accuracy: 0.9472  Best: 0.9489  Save: False
+Epoch 47 done. Test accuracy: 0.9444  Best: 0.9489  Save: False
+Epoch 48 done. Test accuracy: 0.9478  Best: 0.9489  Save: False
+Epoch 49 done. Test accuracy: 0.9467  Best: 0.9489  Save: False
+Epoch 50 done. Test accuracy: 0.9472  Best: 0.9489  Save: False
+Epoch 51 done. Test accuracy: 0.9467  Best: 0.9489  Save: False
+Epoch 52 done. Test accuracy: 0.9461  Best: 0.9489  Save: False
+Epoch 53 done. Test accuracy: 0.9450  Best: 0.9489  Save: False
+Epoch 54 done. Test accuracy: 0.9450  Best: 0.9489  Save: False
+Epoch 55 done. Test accuracy: 0.9439  Best: 0.9489  Save: False
+Epoch 56 done. Test accuracy: 0.9433  Best: 0.9489  Save: False
+Epoch 57 done. Test accuracy: 0.9472  Best: 0.9489  Save: False
+Epoch 58 done. Test accuracy: 0.9456  Best: 0.9489  Save: False
+Epoch 59 done. Test accuracy: 0.9456  Best: 0.9489  Save: False
+Epoch 60 done. Test accuracy: 0.9478  Best: 0.9489  Save: False
+Epoch 61 done. Test accuracy: 0.9456  Best: 0.9489  Save: False
+Epoch 62 done. Test accuracy: 0.9456  Best: 0.9489  Save: False
+Epoch 63 done. Test accuracy: 0.9439  Best: 0.9489  Save: False
+Epoch 64 done. Test accuracy: 0.9489  Best: 0.9489  Save: False
+Epoch 65 done. Test accuracy: 0.9456  Best: 0.9489  Save: False
+Epoch 66 done. Test accuracy: 0.9439  Best: 0.9489  Save: False
+Epoch 67 done. Test accuracy: 0.9433  Best: 0.9489  Save: False
+Epoch 68 done. Test accuracy: 0.9456  Best: 0.9489  Save: False
+Epoch 69 done. Test accuracy: 0.9439  Best: 0.9489  Save: False
+Epoch 70 done. Test accuracy: 0.9422  Best: 0.9489  Save: False
+Epoch 71 done. Test accuracy: 0.9450  Best: 0.9489  Save: False
+Epoch 72 done. Test accuracy: 0.9472  Best: 0.9489  Save: False
+Epoch 73 done. Test accuracy: 0.9456  Best: 0.9489  Save: False
+Epoch 74 done. Test accuracy: 0.9444  Best: 0.9489  Save: False
+Epoch 75 done. Test accuracy: 0.9444  Best: 0.9489  Save: False
+Epoch 76 done. Test accuracy: 0.9467  Best: 0.9489  Save: False
+Epoch 77 done. Test accuracy: 0.9467  Best: 0.9489  Save: False
+Epoch 78 done. Test accuracy: 0.9444  Best: 0.9489  Save: False
+Epoch 79 done. Test accuracy: 0.9456  Best: 0.9489  Save: False
+
+
+Repetition 5 completed in 38 secs
+ Best accuracy for 1 target sample per class and repetition 5 is 0.9489.
+  Average acc: 0.9450 (±0.00)
+Creating pairs for repetition: 6 and sample_per_class: 1
+
+Loading training data from ./row_data/MNIST_to_USPS_XY_repetition_6_sample_per_class_1.npy
+  Target Features, shape (10, 16, 16)
+  Target Labels, shape (10,)
+  Source Features, shape (2000, 16, 16)
+  Source Labels, shape (2000,)
+
+Creating positive and negative pairs
+  Number of positive pairs: 2000
+  Number of negative pairs: 18000
+
+Constructing training pairs
+  Using 2000 positive pairs
+  Using 6000 negative pairs
+  Total number of training pairs: 8000
+
+Creating and storing training examples on disk
+
+
+Training the model - epochs=80  batch_size=256  n_steps=32  n_train_samples=8000
+Test data loaded: target feature shape=(1800, 16, 16, 1)  label shape=(1800, 10)
+Epoch  0 done. Test accuracy: 0.9444  Best: 0.0000  Save: True
+Epoch  1 done. Test accuracy: 0.9433  Best: 0.9444  Save: False
+Epoch  2 done. Test accuracy: 0.9361  Best: 0.9444  Save: False
+Epoch  3 done. Test accuracy: 0.9483  Best: 0.9444  Save: True
+Epoch  4 done. Test accuracy: 0.9478  Best: 0.9483  Save: False
+Epoch  5 done. Test accuracy: 0.9528  Best: 0.9483  Save: True
+Epoch  6 done. Test accuracy: 0.9528  Best: 0.9528  Save: False
+Epoch  7 done. Test accuracy: 0.9450  Best: 0.9528  Save: False
+Epoch  8 done. Test accuracy: 0.9467  Best: 0.9528  Save: False
+Epoch  9 done. Test accuracy: 0.9489  Best: 0.9528  Save: False
+Epoch 10 done. Test accuracy: 0.9500  Best: 0.9528  Save: False
+Epoch 11 done. Test accuracy: 0.9511  Best: 0.9528  Save: False
+Epoch 12 done. Test accuracy: 0.9461  Best: 0.9528  Save: False
+Epoch 13 done. Test accuracy: 0.9467  Best: 0.9528  Save: False
+Epoch 14 done. Test accuracy: 0.9517  Best: 0.9528  Save: False
+Epoch 15 done. Test accuracy: 0.9506  Best: 0.9528  Save: False
+Epoch 16 done. Test accuracy: 0.9472  Best: 0.9528  Save: False
+Epoch 17 done. Test accuracy: 0.9483  Best: 0.9528  Save: False
+Epoch 18 done. Test accuracy: 0.9461  Best: 0.9528  Save: False
+Epoch 19 done. Test accuracy: 0.9467  Best: 0.9528  Save: False
+Epoch 20 done. Test accuracy: 0.9472  Best: 0.9528  Save: False
+Epoch 21 done. Test accuracy: 0.9461  Best: 0.9528  Save: False
+Epoch 22 done. Test accuracy: 0.9461  Best: 0.9528  Save: False
+Epoch 23 done. Test accuracy: 0.9456  Best: 0.9528  Save: False
+Epoch 24 done. Test accuracy: 0.9450  Best: 0.9528  Save: False
+Epoch 25 done. Test accuracy: 0.9461  Best: 0.9528  Save: False
+Epoch 26 done. Test accuracy: 0.9439  Best: 0.9528  Save: False
+Epoch 27 done. Test accuracy: 0.9444  Best: 0.9528  Save: False
+Epoch 28 done. Test accuracy: 0.9467  Best: 0.9528  Save: False
+Epoch 29 done. Test accuracy: 0.9478  Best: 0.9528  Save: False
+Epoch 30 done. Test accuracy: 0.9483  Best: 0.9528  Save: False
+Epoch 31 done. Test accuracy: 0.9472  Best: 0.9528  Save: False
+Epoch 32 done. Test accuracy: 0.9461  Best: 0.9528  Save: False
+Epoch 33 done. Test accuracy: 0.9444  Best: 0.9528  Save: False
+Epoch 34 done. Test accuracy: 0.9456  Best: 0.9528  Save: False
+Epoch 35 done. Test accuracy: 0.9450  Best: 0.9528  Save: False
+Epoch 36 done. Test accuracy: 0.9456  Best: 0.9528  Save: False
+Epoch 37 done. Test accuracy: 0.9467  Best: 0.9528  Save: False
+Epoch 38 done. Test accuracy: 0.9467  Best: 0.9528  Save: False
+Epoch 39 done. Test accuracy: 0.9439  Best: 0.9528  Save: False
+Epoch 40 done. Test accuracy: 0.9472  Best: 0.9528  Save: False
+Epoch 41 done. Test accuracy: 0.9456  Best: 0.9528  Save: False
+Epoch 42 done. Test accuracy: 0.9444  Best: 0.9528  Save: False
+Epoch 43 done. Test accuracy: 0.9450  Best: 0.9528  Save: False
+Epoch 44 done. Test accuracy: 0.9433  Best: 0.9528  Save: False
+Epoch 45 done. Test accuracy: 0.9433  Best: 0.9528  Save: False
+Epoch 46 done. Test accuracy: 0.9428  Best: 0.9528  Save: False
+Epoch 47 done. Test accuracy: 0.9450  Best: 0.9528  Save: False
+Epoch 48 done. Test accuracy: 0.9433  Best: 0.9528  Save: False
+Epoch 49 done. Test accuracy: 0.9439  Best: 0.9528  Save: False
+Epoch 50 done. Test accuracy: 0.9439  Best: 0.9528  Save: False
+Epoch 51 done. Test accuracy: 0.9406  Best: 0.9528  Save: False
+Epoch 52 done. Test accuracy: 0.9439  Best: 0.9528  Save: False
+Epoch 53 done. Test accuracy: 0.9439  Best: 0.9528  Save: False
+Epoch 54 done. Test accuracy: 0.9422  Best: 0.9528  Save: False
+Epoch 55 done. Test accuracy: 0.9417  Best: 0.9528  Save: False
+Epoch 56 done. Test accuracy: 0.9417  Best: 0.9528  Save: False
+Epoch 57 done. Test accuracy: 0.9433  Best: 0.9528  Save: False
+Epoch 58 done. Test accuracy: 0.9428  Best: 0.9528  Save: False
+Epoch 59 done. Test accuracy: 0.9422  Best: 0.9528  Save: False
+Epoch 60 done. Test accuracy: 0.9433  Best: 0.9528  Save: False
+Epoch 61 done. Test accuracy: 0.9444  Best: 0.9528  Save: False
+Epoch 62 done. Test accuracy: 0.9406  Best: 0.9528  Save: False
+Epoch 63 done. Test accuracy: 0.9444  Best: 0.9528  Save: False
+Epoch 64 done. Test accuracy: 0.9439  Best: 0.9528  Save: False
+Epoch 65 done. Test accuracy: 0.9439  Best: 0.9528  Save: False
+Epoch 66 done. Test accuracy: 0.9433  Best: 0.9528  Save: False
+Epoch 67 done. Test accuracy: 0.9483  Best: 0.9528  Save: False
+Epoch 68 done. Test accuracy: 0.9428  Best: 0.9528  Save: False
+Epoch 69 done. Test accuracy: 0.9439  Best: 0.9528  Save: False
+Epoch 70 done. Test accuracy: 0.9428  Best: 0.9528  Save: False
+Epoch 71 done. Test accuracy: 0.9428  Best: 0.9528  Save: False
+Epoch 72 done. Test accuracy: 0.9417  Best: 0.9528  Save: False
+Epoch 73 done. Test accuracy: 0.9428  Best: 0.9528  Save: False
+Epoch 74 done. Test accuracy: 0.9406  Best: 0.9528  Save: False
+Epoch 75 done. Test accuracy: 0.9417  Best: 0.9528  Save: False
+Epoch 76 done. Test accuracy: 0.9411  Best: 0.9528  Save: False
+Epoch 77 done. Test accuracy: 0.9417  Best: 0.9528  Save: False
+Epoch 78 done. Test accuracy: 0.9428  Best: 0.9528  Save: False
+Epoch 79 done. Test accuracy: 0.9411  Best: 0.9528  Save: False
+
+
+Repetition 6 completed in 37 secs
+ Best accuracy for 1 target sample per class and repetition 6 is 0.9528.
+  Average acc: 0.9450 (±0.00)
+Creating pairs for repetition: 7 and sample_per_class: 1
+
+Loading training data from ./row_data/MNIST_to_USPS_XY_repetition_7_sample_per_class_1.npy
+  Target Features, shape (10, 16, 16)
+  Target Labels, shape (10,)
+  Source Features, shape (2000, 16, 16)
+  Source Labels, shape (2000,)
+
+Creating positive and negative pairs
+  Number of positive pairs: 2000
+  Number of negative pairs: 18000
+
+Constructing training pairs
+  Using 2000 positive pairs
+  Using 6000 negative pairs
+  Total number of training pairs: 8000
+
+Creating and storing training examples on disk
+
+
+Training the model - epochs=80  batch_size=256  n_steps=32  n_train_samples=8000
+Test data loaded: target feature shape=(1800, 16, 16, 1)  label shape=(1800, 10)
+Epoch  0 done. Test accuracy: 0.9478  Best: 0.0000  Save: True
+Epoch  1 done. Test accuracy: 0.9461  Best: 0.9478  Save: False
+Epoch  2 done. Test accuracy: 0.9444  Best: 0.9478  Save: False
+Epoch  3 done. Test accuracy: 0.9494  Best: 0.9478  Save: True
+Epoch  4 done. Test accuracy: 0.9467  Best: 0.9494  Save: False
+Epoch  5 done. Test accuracy: 0.9450  Best: 0.9494  Save: False
+Epoch  6 done. Test accuracy: 0.9461  Best: 0.9494  Save: False
+Epoch  7 done. Test accuracy: 0.9467  Best: 0.9494  Save: False
+Epoch  8 done. Test accuracy: 0.9450  Best: 0.9494  Save: False
+Epoch  9 done. Test accuracy: 0.9444  Best: 0.9494  Save: False
+Epoch 10 done. Test accuracy: 0.9444  Best: 0.9494  Save: False
+Epoch 11 done. Test accuracy: 0.9472  Best: 0.9494  Save: False
+Epoch 12 done. Test accuracy: 0.9467  Best: 0.9494  Save: False
+Epoch 13 done. Test accuracy: 0.9461  Best: 0.9494  Save: False
+Epoch 14 done. Test accuracy: 0.9472  Best: 0.9494  Save: False
+Epoch 15 done. Test accuracy: 0.9456  Best: 0.9494  Save: False
+Epoch 16 done. Test accuracy: 0.9433  Best: 0.9494  Save: False
+Epoch 17 done. Test accuracy: 0.9461  Best: 0.9494  Save: False
+Epoch 18 done. Test accuracy: 0.9450  Best: 0.9494  Save: False
+Epoch 19 done. Test accuracy: 0.9444  Best: 0.9494  Save: False
+Epoch 20 done. Test accuracy: 0.9489  Best: 0.9494  Save: False
+Epoch 21 done. Test accuracy: 0.9394  Best: 0.9494  Save: False
+Epoch 22 done. Test accuracy: 0.9461  Best: 0.9494  Save: False
+Epoch 23 done. Test accuracy: 0.9467  Best: 0.9494  Save: False
+Epoch 24 done. Test accuracy: 0.9494  Best: 0.9494  Save: False
+Epoch 25 done. Test accuracy: 0.9467  Best: 0.9494  Save: False
+Epoch 26 done. Test accuracy: 0.9450  Best: 0.9494  Save: False
+Epoch 27 done. Test accuracy: 0.9461  Best: 0.9494  Save: False
+Epoch 28 done. Test accuracy: 0.9422  Best: 0.9494  Save: False
+Epoch 29 done. Test accuracy: 0.9411  Best: 0.9494  Save: False
+Epoch 30 done. Test accuracy: 0.9450  Best: 0.9494  Save: False
+Epoch 31 done. Test accuracy: 0.9433  Best: 0.9494  Save: False
+Epoch 32 done. Test accuracy: 0.9428  Best: 0.9494  Save: False
+Epoch 33 done. Test accuracy: 0.9444  Best: 0.9494  Save: False
+Epoch 34 done. Test accuracy: 0.9478  Best: 0.9494  Save: False
+Epoch 35 done. Test accuracy: 0.9450  Best: 0.9494  Save: False
+Epoch 36 done. Test accuracy: 0.9483  Best: 0.9494  Save: False
+Epoch 37 done. Test accuracy: 0.9467  Best: 0.9494  Save: False
+Epoch 38 done. Test accuracy: 0.9461  Best: 0.9494  Save: False
+Epoch 39 done. Test accuracy: 0.9461  Best: 0.9494  Save: False
+Epoch 40 done. Test accuracy: 0.9444  Best: 0.9494  Save: False
+Epoch 41 done. Test accuracy: 0.9433  Best: 0.9494  Save: False
+Epoch 42 done. Test accuracy: 0.9444  Best: 0.9494  Save: False
+Epoch 43 done. Test accuracy: 0.9433  Best: 0.9494  Save: False
+Epoch 44 done. Test accuracy: 0.9467  Best: 0.9494  Save: False
+Epoch 45 done. Test accuracy: 0.9456  Best: 0.9494  Save: False
+Epoch 46 done. Test accuracy: 0.9400  Best: 0.9494  Save: False
+Epoch 47 done. Test accuracy: 0.9483  Best: 0.9494  Save: False
+Epoch 48 done. Test accuracy: 0.9472  Best: 0.9494  Save: False
+Epoch 49 done. Test accuracy: 0.9467  Best: 0.9494  Save: False
+Epoch 50 done. Test accuracy: 0.9456  Best: 0.9494  Save: False
+Epoch 51 done. Test accuracy: 0.9439  Best: 0.9494  Save: False
+Epoch 52 done. Test accuracy: 0.9472  Best: 0.9494  Save: False
+Epoch 53 done. Test accuracy: 0.9444  Best: 0.9494  Save: False
+Epoch 54 done. Test accuracy: 0.9411  Best: 0.9494  Save: False
+Epoch 55 done. Test accuracy: 0.9461  Best: 0.9494  Save: False
+Epoch 56 done. Test accuracy: 0.9456  Best: 0.9494  Save: False
+Epoch 57 done. Test accuracy: 0.9461  Best: 0.9494  Save: False
+Epoch 58 done. Test accuracy: 0.9483  Best: 0.9494  Save: False
+Epoch 59 done. Test accuracy: 0.9494  Best: 0.9494  Save: False
+Epoch 60 done. Test accuracy: 0.9467  Best: 0.9494  Save: False
+Epoch 61 done. Test accuracy: 0.9500  Best: 0.9494  Save: True
+Epoch 62 done. Test accuracy: 0.9500  Best: 0.9500  Save: False
+Epoch 63 done. Test accuracy: 0.9489  Best: 0.9500  Save: False
+Epoch 64 done. Test accuracy: 0.9461  Best: 0.9500  Save: False
+Epoch 65 done. Test accuracy: 0.9444  Best: 0.9500  Save: False
+Epoch 66 done. Test accuracy: 0.9461  Best: 0.9500  Save: False
+Epoch 67 done. Test accuracy: 0.9439  Best: 0.9500  Save: False
+Epoch 68 done. Test accuracy: 0.9472  Best: 0.9500  Save: False
+Epoch 69 done. Test accuracy: 0.9472  Best: 0.9500  Save: False
+Epoch 70 done. Test accuracy: 0.9472  Best: 0.9500  Save: False
+Epoch 71 done. Test accuracy: 0.9428  Best: 0.9500  Save: False
+Epoch 72 done. Test accuracy: 0.9439  Best: 0.9500  Save: False
+Epoch 73 done. Test accuracy: 0.9444  Best: 0.9500  Save: False
+Epoch 74 done. Test accuracy: 0.9500  Best: 0.9500  Save: False
+Epoch 75 done. Test accuracy: 0.9467  Best: 0.9500  Save: False
+Epoch 76 done. Test accuracy: 0.9456  Best: 0.9500  Save: False
+Epoch 77 done. Test accuracy: 0.9444  Best: 0.9500  Save: False
+Epoch 78 done. Test accuracy: 0.9450  Best: 0.9500  Save: False
+Epoch 79 done. Test accuracy: 0.9467  Best: 0.9500  Save: False
+
+
+Repetition 7 completed in 38 secs
+ Best accuracy for 1 target sample per class and repetition 7 is 0.9500.
+  Average acc: 0.9458 (±0.00)
+Creating pairs for repetition: 8 and sample_per_class: 1
+
+Loading training data from ./row_data/MNIST_to_USPS_XY_repetition_8_sample_per_class_1.npy
+  Target Features, shape (10, 16, 16)
+  Target Labels, shape (10,)
+  Source Features, shape (2000, 16, 16)
+  Source Labels, shape (2000,)
+
+Creating positive and negative pairs
+  Number of positive pairs: 2000
+  Number of negative pairs: 18000
+
+Constructing training pairs
+  Using 2000 positive pairs
+  Using 6000 negative pairs
+  Total number of training pairs: 8000
+
+Creating and storing training examples on disk
+
+
+Training the model - epochs=80  batch_size=256  n_steps=32  n_train_samples=8000
+Test data loaded: target feature shape=(1800, 16, 16, 1)  label shape=(1800, 10)
+Epoch  0 done. Test accuracy: 0.9478  Best: 0.0000  Save: True
+Epoch  1 done. Test accuracy: 0.9572  Best: 0.9478  Save: True
+Epoch  2 done. Test accuracy: 0.9550  Best: 0.9572  Save: False
+Epoch  3 done. Test accuracy: 0.9567  Best: 0.9572  Save: False
+Epoch  4 done. Test accuracy: 0.9578  Best: 0.9572  Save: True
+Epoch  5 done. Test accuracy: 0.9561  Best: 0.9578  Save: False
+Epoch  6 done. Test accuracy: 0.9544  Best: 0.9578  Save: False
+Epoch  7 done. Test accuracy: 0.9572  Best: 0.9578  Save: False
+Epoch  8 done. Test accuracy: 0.9561  Best: 0.9578  Save: False
+Epoch  9 done. Test accuracy: 0.9533  Best: 0.9578  Save: False
+Epoch 10 done. Test accuracy: 0.9550  Best: 0.9578  Save: False
+Epoch 11 done. Test accuracy: 0.9461  Best: 0.9578  Save: False
+Epoch 12 done. Test accuracy: 0.9556  Best: 0.9578  Save: False
+Epoch 13 done. Test accuracy: 0.9544  Best: 0.9578  Save: False
+Epoch 14 done. Test accuracy: 0.9589  Best: 0.9578  Save: True
+Epoch 15 done. Test accuracy: 0.9517  Best: 0.9589  Save: False
+Epoch 16 done. Test accuracy: 0.9528  Best: 0.9589  Save: False
+Epoch 17 done. Test accuracy: 0.9533  Best: 0.9589  Save: False
+Epoch 18 done. Test accuracy: 0.9528  Best: 0.9589  Save: False
+Epoch 19 done. Test accuracy: 0.9561  Best: 0.9589  Save: False
+Epoch 20 done. Test accuracy: 0.9539  Best: 0.9589  Save: False
+Epoch 21 done. Test accuracy: 0.9522  Best: 0.9589  Save: False
+Epoch 22 done. Test accuracy: 0.9500  Best: 0.9589  Save: False
+Epoch 23 done. Test accuracy: 0.9522  Best: 0.9589  Save: False
+Epoch 24 done. Test accuracy: 0.9494  Best: 0.9589  Save: False
+Epoch 25 done. Test accuracy: 0.9528  Best: 0.9589  Save: False
+Epoch 26 done. Test accuracy: 0.9544  Best: 0.9589  Save: False
+Epoch 27 done. Test accuracy: 0.9517  Best: 0.9589  Save: False
+Epoch 28 done. Test accuracy: 0.9522  Best: 0.9589  Save: False
+Epoch 29 done. Test accuracy: 0.9533  Best: 0.9589  Save: False
+Epoch 30 done. Test accuracy: 0.9500  Best: 0.9589  Save: False
+Epoch 31 done. Test accuracy: 0.9511  Best: 0.9589  Save: False
+Epoch 32 done. Test accuracy: 0.9539  Best: 0.9589  Save: False
+Epoch 33 done. Test accuracy: 0.9494  Best: 0.9589  Save: False
+Epoch 34 done. Test accuracy: 0.9500  Best: 0.9589  Save: False
+Epoch 35 done. Test accuracy: 0.9528  Best: 0.9589  Save: False
+Epoch 36 done. Test accuracy: 0.9517  Best: 0.9589  Save: False
+Epoch 37 done. Test accuracy: 0.9506  Best: 0.9589  Save: False
+Epoch 38 done. Test accuracy: 0.9517  Best: 0.9589  Save: False
+Epoch 39 done. Test accuracy: 0.9517  Best: 0.9589  Save: False
+Epoch 40 done. Test accuracy: 0.9528  Best: 0.9589  Save: False
+Epoch 41 done. Test accuracy: 0.9522  Best: 0.9589  Save: False
+Epoch 42 done. Test accuracy: 0.9489  Best: 0.9589  Save: False
+Epoch 43 done. Test accuracy: 0.9483  Best: 0.9589  Save: False
+Epoch 44 done. Test accuracy: 0.9528  Best: 0.9589  Save: False
+Epoch 45 done. Test accuracy: 0.9506  Best: 0.9589  Save: False
+Epoch 46 done. Test accuracy: 0.9522  Best: 0.9589  Save: False
+Epoch 47 done. Test accuracy: 0.9533  Best: 0.9589  Save: False
+Epoch 48 done. Test accuracy: 0.9522  Best: 0.9589  Save: False
+Epoch 49 done. Test accuracy: 0.9561  Best: 0.9589  Save: False
+Epoch 50 done. Test accuracy: 0.9517  Best: 0.9589  Save: False
+Epoch 51 done. Test accuracy: 0.9528  Best: 0.9589  Save: False
+Epoch 52 done. Test accuracy: 0.9517  Best: 0.9589  Save: False
+Epoch 53 done. Test accuracy: 0.9539  Best: 0.9589  Save: False
+Epoch 54 done. Test accuracy: 0.9522  Best: 0.9589  Save: False
+Epoch 55 done. Test accuracy: 0.9533  Best: 0.9589  Save: False
+Epoch 56 done. Test accuracy: 0.9511  Best: 0.9589  Save: False
+Epoch 57 done. Test accuracy: 0.9506  Best: 0.9589  Save: False
+Epoch 58 done. Test accuracy: 0.9500  Best: 0.9589  Save: False
+Epoch 59 done. Test accuracy: 0.9539  Best: 0.9589  Save: False
+Epoch 60 done. Test accuracy: 0.9522  Best: 0.9589  Save: False
+Epoch 61 done. Test accuracy: 0.9506  Best: 0.9589  Save: False
+Epoch 62 done. Test accuracy: 0.9522  Best: 0.9589  Save: False
+Epoch 63 done. Test accuracy: 0.9511  Best: 0.9589  Save: False
+Epoch 64 done. Test accuracy: 0.9511  Best: 0.9589  Save: False
+Epoch 65 done. Test accuracy: 0.9506  Best: 0.9589  Save: False
+Epoch 66 done. Test accuracy: 0.9511  Best: 0.9589  Save: False
+Epoch 67 done. Test accuracy: 0.9494  Best: 0.9589  Save: False
+Epoch 68 done. Test accuracy: 0.9533  Best: 0.9589  Save: False
+Epoch 69 done. Test accuracy: 0.9528  Best: 0.9589  Save: False
+Epoch 70 done. Test accuracy: 0.9528  Best: 0.9589  Save: False
+Epoch 71 done. Test accuracy: 0.9550  Best: 0.9589  Save: False
+Epoch 72 done. Test accuracy: 0.9544  Best: 0.9589  Save: False
+Epoch 73 done. Test accuracy: 0.9511  Best: 0.9589  Save: False
+Epoch 74 done. Test accuracy: 0.9517  Best: 0.9589  Save: False
+Epoch 75 done. Test accuracy: 0.9478  Best: 0.9589  Save: False
+Epoch 76 done. Test accuracy: 0.9506  Best: 0.9589  Save: False
+Epoch 77 done. Test accuracy: 0.9494  Best: 0.9589  Save: False
+Epoch 78 done. Test accuracy: 0.9517  Best: 0.9589  Save: False
+Epoch 79 done. Test accuracy: 0.9511  Best: 0.9589  Save: False
+
+
+Repetition 8 completed in 37 secs
+ Best accuracy for 1 target sample per class and repetition 8 is 0.9589.
+  Average acc: 0.9524 (±0.00)
+Creating pairs for repetition: 9 and sample_per_class: 1
+
+Loading training data from ./row_data/MNIST_to_USPS_XY_repetition_9_sample_per_class_1.npy
+  Target Features, shape (10, 16, 16)
+  Target Labels, shape (10,)
+  Source Features, shape (2000, 16, 16)
+  Source Labels, shape (2000,)
+
+Creating positive and negative pairs
+  Number of positive pairs: 2000
+  Number of negative pairs: 18000
+
+Constructing training pairs
+  Using 2000 positive pairs
+  Using 6000 negative pairs
+  Total number of training pairs: 8000
+
+Creating and storing training examples on disk
+
+
+Training the model - epochs=80  batch_size=256  n_steps=32  n_train_samples=8000
+Test data loaded: target feature shape=(1800, 16, 16, 1)  label shape=(1800, 10)
+Epoch  0 done. Test accuracy: 0.9433  Best: 0.0000  Save: True
+Epoch  1 done. Test accuracy: 0.9411  Best: 0.9433  Save: False
+Epoch  2 done. Test accuracy: 0.9389  Best: 0.9433  Save: False
+Epoch  3 done. Test accuracy: 0.9433  Best: 0.9433  Save: False
+Epoch  4 done. Test accuracy: 0.9372  Best: 0.9433  Save: False
+Epoch  5 done. Test accuracy: 0.9406  Best: 0.9433  Save: False
+Epoch  6 done. Test accuracy: 0.9406  Best: 0.9433  Save: False
+Epoch  7 done. Test accuracy: 0.9400  Best: 0.9433  Save: False
+Epoch  8 done. Test accuracy: 0.9433  Best: 0.9433  Save: False
+Epoch  9 done. Test accuracy: 0.9406  Best: 0.9433  Save: False
+Epoch 10 done. Test accuracy: 0.9428  Best: 0.9433  Save: False
+Epoch 11 done. Test accuracy: 0.9444  Best: 0.9433  Save: True
+Epoch 12 done. Test accuracy: 0.9428  Best: 0.9444  Save: False
+Epoch 13 done. Test accuracy: 0.9417  Best: 0.9444  Save: False
+Epoch 14 done. Test accuracy: 0.9483  Best: 0.9444  Save: True
+Epoch 15 done. Test accuracy: 0.9422  Best: 0.9483  Save: False
+Epoch 16 done. Test accuracy: 0.9428  Best: 0.9483  Save: False
+Epoch 17 done. Test accuracy: 0.9450  Best: 0.9483  Save: False
+Epoch 18 done. Test accuracy: 0.9467  Best: 0.9483  Save: False
+Epoch 19 done. Test accuracy: 0.9422  Best: 0.9483  Save: False
+Epoch 20 done. Test accuracy: 0.9439  Best: 0.9483  Save: False
+Epoch 21 done. Test accuracy: 0.9433  Best: 0.9483  Save: False
+Epoch 22 done. Test accuracy: 0.9406  Best: 0.9483  Save: False
+Epoch 23 done. Test accuracy: 0.9417  Best: 0.9483  Save: False
+Epoch 24 done. Test accuracy: 0.9433  Best: 0.9483  Save: False
+Epoch 25 done. Test accuracy: 0.9406  Best: 0.9483  Save: False
+Epoch 26 done. Test accuracy: 0.9417  Best: 0.9483  Save: False
+Epoch 27 done. Test accuracy: 0.9428  Best: 0.9483  Save: False
+Epoch 28 done. Test accuracy: 0.9383  Best: 0.9483  Save: False
+Epoch 29 done. Test accuracy: 0.9444  Best: 0.9483  Save: False
+Epoch 30 done. Test accuracy: 0.9433  Best: 0.9483  Save: False
+Epoch 31 done. Test accuracy: 0.9417  Best: 0.9483  Save: False
+Epoch 32 done. Test accuracy: 0.9444  Best: 0.9483  Save: False
+Epoch 33 done. Test accuracy: 0.9478  Best: 0.9483  Save: False
+Epoch 34 done. Test accuracy: 0.9433  Best: 0.9483  Save: False
+Epoch 35 done. Test accuracy: 0.9456  Best: 0.9483  Save: False
+Epoch 36 done. Test accuracy: 0.9456  Best: 0.9483  Save: False
+Epoch 37 done. Test accuracy: 0.9417  Best: 0.9483  Save: False
+Epoch 38 done. Test accuracy: 0.9417  Best: 0.9483  Save: False
+Epoch 39 done. Test accuracy: 0.9461  Best: 0.9483  Save: False
+Epoch 40 done. Test accuracy: 0.9450  Best: 0.9483  Save: False
+Epoch 41 done. Test accuracy: 0.9411  Best: 0.9483  Save: False
+Epoch 42 done. Test accuracy: 0.9478  Best: 0.9483  Save: False
+Epoch 43 done. Test accuracy: 0.9433  Best: 0.9483  Save: False
+Epoch 44 done. Test accuracy: 0.9411  Best: 0.9483  Save: False
+Epoch 45 done. Test accuracy: 0.9461  Best: 0.9483  Save: False
+Epoch 46 done. Test accuracy: 0.9467  Best: 0.9483  Save: False
+Epoch 47 done. Test accuracy: 0.9433  Best: 0.9483  Save: False
+Epoch 48 done. Test accuracy: 0.9422  Best: 0.9483  Save: False
+Epoch 49 done. Test accuracy: 0.9428  Best: 0.9483  Save: False
+Epoch 50 done. Test accuracy: 0.9483  Best: 0.9483  Save: False
+Epoch 51 done. Test accuracy: 0.9472  Best: 0.9483  Save: False
+Epoch 52 done. Test accuracy: 0.9461  Best: 0.9483  Save: False
+Epoch 53 done. Test accuracy: 0.9478  Best: 0.9483  Save: False
+Epoch 54 done. Test accuracy: 0.9478  Best: 0.9483  Save: False
+Epoch 55 done. Test accuracy: 0.9439  Best: 0.9483  Save: False
+Epoch 56 done. Test accuracy: 0.9461  Best: 0.9483  Save: False
+Epoch 57 done. Test accuracy: 0.9456  Best: 0.9483  Save: False
+Epoch 58 done. Test accuracy: 0.9411  Best: 0.9483  Save: False
+Epoch 59 done. Test accuracy: 0.9472  Best: 0.9483  Save: False
+Epoch 60 done. Test accuracy: 0.9400  Best: 0.9483  Save: False
+Epoch 61 done. Test accuracy: 0.9467  Best: 0.9483  Save: False
+Epoch 62 done. Test accuracy: 0.9472  Best: 0.9483  Save: False
+Epoch 63 done. Test accuracy: 0.9439  Best: 0.9483  Save: False
+Epoch 64 done. Test accuracy: 0.9483  Best: 0.9483  Save: False
+Epoch 65 done. Test accuracy: 0.9489  Best: 0.9483  Save: True
+Epoch 66 done. Test accuracy: 0.9439  Best: 0.9489  Save: False
+Epoch 67 done. Test accuracy: 0.9461  Best: 0.9489  Save: False
+Epoch 68 done. Test accuracy: 0.9450  Best: 0.9489  Save: False
+Epoch 69 done. Test accuracy: 0.9483  Best: 0.9489  Save: False
+Epoch 70 done. Test accuracy: 0.9428  Best: 0.9489  Save: False
+Epoch 71 done. Test accuracy: 0.9450  Best: 0.9489  Save: False
+Epoch 72 done. Test accuracy: 0.9461  Best: 0.9489  Save: False
+Epoch 73 done. Test accuracy: 0.9494  Best: 0.9489  Save: True
+Epoch 74 done. Test accuracy: 0.9467  Best: 0.9494  Save: False
+Epoch 75 done. Test accuracy: 0.9500  Best: 0.9494  Save: True
+Epoch 76 done. Test accuracy: 0.9467  Best: 0.9500  Save: False
+Epoch 77 done. Test accuracy: 0.9439  Best: 0.9500  Save: False
+Epoch 78 done. Test accuracy: 0.9461  Best: 0.9500  Save: False
+Epoch 79 done. Test accuracy: 0.9439  Best: 0.9500  Save: False
+
+
+Repetition 9 completed in 37 secs
+ Best accuracy for 1 target sample per class and repetition 9 is 0.9500.
+  Average acc: 0.9441 (±0.00)

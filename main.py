@@ -1,16 +1,18 @@
+import math
 import os
 import random
 import sys
-import math
+from datetime import datetime
+from time import time
 
-import numpy   as np
+import numpy as np
 from keras import backend as K
 from keras.layers import Activation, Dropout, Flatten, Dense
 from keras.layers import Input, Lambda, Convolution2D, MaxPooling2D
 from keras.models import Sequential, Model
 from keras.utils import np_utils
 
-VERBOSE = True
+VERBOSE = False
 
 
 def printn(string):
@@ -35,30 +37,32 @@ def Create_Pairs(domain_adaptation_task, repetition, sample_per_class):
 
     print('Creating pairs for repetition: ' + str(cc) + ' and sample_per_class: ' + str(sample_per_class))
 
-    print('\nLoading from ./row_data/')
+    print('\nLoading training data from ./row_data/{}_XY_repetition_{}_sample_per_class_{}.npy'.format(
+        UM, cc, SpC
+    ))
     # shape(X_train_target) = [10 * samples_per_class, 16, 16]
     X_train_target = np.load(
         './row_data/' + UM + '_X_train_target_repetition_' + str(cc) + '_sample_per_class_' + str(SpC) + '.npy')
 
-    print('  X_train_target.shape {}'.format(X_train_target.shape))
+    print('  Target Features, shape {}'.format(X_train_target.shape))
 
     # shape(y_train_target) = [10 * samples_per_class]
     y_train_target = np.load(
         './row_data/' + UM + '_y_train_target_repetition_' + str(cc) + '_sample_per_class_' + str(SpC) + '.npy')
 
-    print('  y_train_target.shape {}'.format(y_train_target.shape))
+    print('  Target Labels, shape {}'.format(y_train_target.shape))
 
     # shape(X_train_source) = [2000, 16, 16]
     X_train_source = np.load(
         './row_data/' + UM + '_X_train_source_repetition_' + str(cc) + '_sample_per_class_' + str(SpC) + '.npy')
 
-    print('  X_train_source.shape {}'.format(X_train_source.shape))
+    print('  Source Features, shape {}'.format(X_train_source.shape))
 
     # shape(y_train_source) = [2000]
     y_train_source = np.load(
         './row_data/' + UM + '_y_train_source_repetition_' + str(cc) + '_sample_per_class_' + str(SpC) + '.npy')
 
-    print('  y_train_source.shape {}'.format(y_train_source.shape))
+    print('  Source Labels, shape {}'.format(y_train_source.shape))
 
     print('\nCreating positive and negative pairs')
     Training_P = []
@@ -166,6 +170,8 @@ def training_the_model(model, domain_adaptation_task, repetition, sample_per_cla
     cc = repetition
     SpC = sample_per_class
 
+
+
     if UM != 'MNIST_to_USPS':
         if UM != 'USPS_to_MNIST':
             raise Exception('domain_adaptation_task should be either MNIST_to_USPS or USPS_to_MNIST')
@@ -183,6 +189,8 @@ def training_the_model(model, domain_adaptation_task, repetition, sample_per_cla
         './row_data/' + UM + '_X_test_target_repetition_' + str(cc) + '_sample_per_class_' + str(SpC) + '.npy')
     y_test = np.load(
         './row_data/' + UM + '_y_test_target_repetition_' + str(cc) + '_sample_per_class_' + str(SpC) + '.npy')
+
+
     X_test = X_test.reshape(X_test.shape[0], 16, 16, 1)
     y_test = np_utils.to_categorical(y_test, nb_classes)
 
@@ -199,16 +207,22 @@ def training_the_model(model, domain_adaptation_task, repetition, sample_per_cla
     y1 = np_utils.to_categorical(y1, nb_classes)
     y2 = np_utils.to_categorical(y2, nb_classes)
 
-    print('Training the model - Epoch ' + str(epoch))
+    n_steps = math.ceil(len(y2) / batch_size)
+
+    print('\n\nTraining the model - epochs={}  batch_size={}  n_steps={}  n_train_samples={}'.format(
+        epoch, batch_size, n_steps, len(y2)
+    ))
+
+    print('Test data loaded: target feature shape={}  label shape={}'.format(X_test.shape, y_test.shape))
     nn = batch_size
     best_Acc = 0
+    accuracies = []
     for e in range(epoch):
-        if e % 10 == 0 and not VERBOSE:
-            printn(str(e) + '->')
-        n_steps = math.ceil(len(y2) / nn)
+        # if e % 10 == 0 and not VERBOSE:
+        #     printn(str(e) + '->')
 
         if VERBOSE:
-            print('\n\nStaring on epoch {}. Number of steps: {} '.format(e, n_steps))
+            print('Begining epoch {}.'.format(e, n_steps))
 
         for i in range(n_steps):
             source_loss = model.train_on_batch([X1[i * nn:(i + 1) * nn, :, :, :], X2[i * nn:(i + 1) * nn, :, :, :]],
@@ -228,13 +242,18 @@ def training_the_model(model, domain_adaptation_task, repetition, sample_per_cla
                 ))
 
         Out = model.predict([X_test, X_test])
+
         Acc_v = np.argmax(Out[0], axis=1) - np.argmax(y_test, axis=1)
         Acc = (len(Acc_v) - np.count_nonzero(Acc_v) + .0000001) / len(Acc_v)
 
+        accuracies.append(Acc)
+
+        print('Epoch {:2d} done. Test accuracy: {:0.4f}  Best: {:0.4f}  Save: {}'.format(e, Acc, best_Acc, best_Acc < Acc))
+
         if best_Acc < Acc:
             best_Acc = Acc
-    print(str(e))
-    return best_Acc
+
+    return best_Acc, accuracies
 
 
 def main():
@@ -280,18 +299,24 @@ def main():
                   optimizer='adadelta',
                   loss_weights={'classification': 1 - alpha, 'CSA': alpha})
 
+    print('Start time: {}'.format(datetime.now().strftime('%Y-%m-%d %H:%M')))
     print('Domain Adaptation Task: ' + domain_adaptation_task)
 
     for repetition in range(10):
+        start_time = time()
+
         # let's create the positive and negative pairs using row data.
         # pairs will be saved in ./pairs directory
         Create_Pairs(domain_adaptation_task, repetition, sample_per_class)
 
-        Acc = training_the_model(model, domain_adaptation_task, repetition, sample_per_class)
+        Acc, accuracies = training_the_model(model, domain_adaptation_task, repetition, sample_per_class)
 
-        print(
-            'Best accuracy for {} target sample per class and repetition {} is {}.'.format(sample_per_class, repetition,
-                                                                                           Acc))
+        duration = time() - start_time
+        print('\n\nRepetition {} completed in {:0.0f} secs'.format(repetition, duration))
+
+        print(' Best accuracy for {} target sample per class and repetition {} is {:0.4f}.\n  Average acc: {:0.4f} (±{:0.2f})'.format(
+            sample_per_class, repetition, Acc, np.average(accuracies), np.std(accuracies)
+        ))
 
 
 if __name__ == '__main__':
