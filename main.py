@@ -1,6 +1,7 @@
 import os
 import random
 import sys
+import math
 
 import numpy   as np
 from keras import backend as K
@@ -8,6 +9,8 @@ from keras.layers import Activation, Dropout, Flatten, Dense
 from keras.layers import Input, Lambda, Convolution2D, MaxPooling2D
 from keras.models import Sequential, Model
 from keras.utils import np_utils
+
+VERBOSE = True
 
 
 def printn(string):
@@ -32,13 +35,19 @@ def Create_Pairs(domain_adaptation_task, repetition, sample_per_class):
 
     print('Creating pairs for repetition: ' + str(cc) + ' and sample_per_class: ' + str(sample_per_class))
 
+    # shape(X_train_target) = [10 * samples_per_class, 16, 16]
     X_train_target = np.load(
         './row_data/' + UM + '_X_train_target_repetition_' + str(cc) + '_sample_per_class_' + str(SpC) + '.npy')
+
+    # shape(y_train_target) = [10 * samples_per_class]
     y_train_target = np.load(
         './row_data/' + UM + '_y_train_target_repetition_' + str(cc) + '_sample_per_class_' + str(SpC) + '.npy')
 
+    # shape(X_train_source) = [2000, 16, 16]
     X_train_source = np.load(
         './row_data/' + UM + '_X_train_source_repetition_' + str(cc) + '_sample_per_class_' + str(SpC) + '.npy')
+
+    # shape(y_train_source) = [2000]
     y_train_source = np.load(
         './row_data/' + UM + '_y_train_source_repetition_' + str(cc) + '_sample_per_class_' + str(SpC) + '.npy')
 
@@ -53,7 +62,10 @@ def Create_Pairs(domain_adaptation_task, repetition, sample_per_class):
                 Training_N.append([trs, trt])
 
     random.shuffle(Training_N)
+
+    # NOTE: In the training examples, there are 3 times more negative pairs than positive pairs
     Training = Training_P + Training_N[:3 * len(Training_P)]
+
     random.shuffle(Training)
 
     X1 = np.zeros([len(Training), 16, 16], dtype='float32')
@@ -111,8 +123,14 @@ def Create_Model():
 
 def euclidean_distance(vects):
     eps = 1e-08
-    x, y = vects
-    return K.sqrt(K.maximum(K.sum(K.square(x - y), axis=1, keepdims=True), eps))
+    x, y = vects  # Shapes of the vectors are [batch_size, 84]
+    squared_diff = K.square(x - y)
+    sum_of_squares = K.sum(squared_diff, axis=1, keepdims=True)  # shape=[batch_size, 1]
+    max_val = K.maximum(sum_of_squares, eps)  # shape=[batch_size, 1]
+    dist = K.sqrt(max_val)
+
+    # return K.sqrt(K.maximum(K.sum(K.square(x - y), axis=1, keepdims=True), eps))
+    return dist
 
 
 def eucl_dist_output_shape(shapes):
@@ -168,13 +186,29 @@ def training_the_model(model, domain_adaptation_task, repetition, sample_per_cla
     nn = batch_size
     best_Acc = 0
     for e in range(epoch):
-        if e % 10 == 0:
+        if e % 10 == 0 and not VERBOSE:
             printn(str(e) + '->')
-        for i in range(int(len(y2) / nn)):
-            loss = model.train_on_batch([X1[i * nn:(i + 1) * nn, :, :, :], X2[i * nn:(i + 1) * nn, :, :, :]],
-                                        [y1[i * nn:(i + 1) * nn, :], yc[i * nn:(i + 1) * nn, ]])
-            loss = model.train_on_batch([X2[i * nn:(i + 1) * nn, :, :, :], X1[i * nn:(i + 1) * nn, :, :, :]],
-                                        [y2[i * nn:(i + 1) * nn, :], yc[i * nn:(i + 1) * nn, ]])
+        n_steps = math.ceil(len(y2) / nn)
+
+        if VERBOSE:
+            print('\n\nStaring on epoch {}. Number of steps: {} '.format(e, n_steps))
+
+        for i in range(n_steps):
+            source_loss = model.train_on_batch([X1[i * nn:(i + 1) * nn, :, :, :], X2[i * nn:(i + 1) * nn, :, :, :]],
+                                               [y1[i * nn:(i + 1) * nn, :], yc[i * nn:(i + 1) * nn, ]])
+
+            target_loss = model.train_on_batch([X2[i * nn:(i + 1) * nn, :, :, :], X1[i * nn:(i + 1) * nn, :, :, :]],
+                                               [y2[i * nn:(i + 1) * nn, :], yc[i * nn:(i + 1) * nn, ]])
+            if i % 30 == 0 and VERBOSE:
+                print('Step {}'.format(i))
+                print('  Source Pass:  {}'.format(
+                    '  '.join(
+                        ['{} {:0.4f}'.format(model.metrics_names[i], source_loss[i]) for i in range(len(source_loss))])
+                ))
+                print('  Target Pass:  {}'.format(
+                    '  '.join(
+                        ['{} {:0.4f}'.format(model.metrics_names[i], target_loss[i]) for i in range(len(target_loss))])
+                ))
 
         Out = model.predict([X_test, X_test])
         Acc_v = np.argmax(Out[0], axis=1) - np.argmax(y_test, axis=1)
@@ -230,11 +264,12 @@ def main():
                   loss_weights={'classification': 1 - alpha, 'CSA': alpha})
 
     print('Domain Adaptation Task: ' + domain_adaptation_task)
-    # let's create the positive and negative pairs using row data.
-    # pairs will be saved in ./pairs directory
-    sample_per_class = 1
+
     for repetition in range(10):
+        # let's create the positive and negative pairs using row data.
+        # pairs will be saved in ./pairs directory
         Create_Pairs(domain_adaptation_task, repetition, sample_per_class)
+
         Acc = training_the_model(model, domain_adaptation_task, repetition, sample_per_class)
 
         print(
